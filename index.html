@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REQUERIMIENTO DE NUEVO PRODUCTO</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6f0fa; /* Fondo azul claro similar al PDF */
+            margin: 0;
+            padding: 20px;
+        }
+        .form-container {
+            background-color: #e6f0fa;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #b3d4fc;
+        }
+        h2 {
+            color: #0056b3;
+            text-transform: uppercase;
+            border-bottom: 2px solid #b3d4fc;
+            padding-bottom: 10px;
+        }
+        .form-group {
+            display: flex;
+            margin-bottom: 15px;
+            align-items: center;
+        }
+        .form-group label {
+            width: 200px;
+            text-align: right;
+            margin-right: 15px;
+            font-size: 14px;
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            flex: 1;
+            padding: 6px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .dimension-group {
+            display: flex;
+            flex: 1;
+            gap: 10px;
+        }
+        .dimension-group input { width: 60px; }
+        .btn-submit {
+            display: block;
+            margin: 30px 0 0 auto;
+            padding: 10px 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #333;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .btn-submit:hover { background-color: #e0e0e0; }
+        .help-text { font-size: 11px; color: #666; font-style: italic; margin-bottom: 2px; }
+        .mandatory-note { font-size: 12px; color: #666; margin-top: 20px; }
+        .readonly-input { background-color: #f5f5f5; cursor: not-allowed; }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>REQUERIMIENTO DE NUEVO PRODUCTO</h2>
+    
+    <form id="productForm">
+        <div class="form-group">
+            <label>Usuario / Correo *</label>
+            <select id="correo" name="correo" required></select>
+        </div>
+
+        <div class="form-group">
+            <label>Fecha actual *</label>
+            <input type="date" id="fecha" name="fecha" required readonly class="readonly-input">
+        </div>
+
+        <div class="form-group">
+            <label>Descripción *</label>
+            <input type="text" id="descripcion" name="descripcion" required>
+        </div>
+
+        <div class="form-group">
+            <label>Familia</label>
+            <select id="familia" name="familia"></select>
+        </div>
+
+        <div class="form-group">
+            <label>Super Categoría / Categoría *</label>
+            <select id="superCategoria" name="superCategoria" required></select>
+        </div>
+
+        <div class="form-group">
+            <label>Unidad *</label>
+            <select id="unidad" name="unidad" required></select>
+        </div>
+
+        <div class="form-group">
+            <label>Material *</label>
+            <input type="text" id="material" name="material" required>
+        </div>
+
+        <div class="form-group">
+            <label>Norma</label>
+            <div style="display:flex; flex:1; gap:10px;">
+                <select id="norma" name="norma"></select>
+                <label style="width:auto; margin-left:10px;">Nro. / Res.</label>
+                <input type="text" id="nroRes" name="nroRes">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Marca / Fabricante *</label>
+            <input type="text" id="marca" name="marca" required>
+        </div>
+
+        <div class="form-group">
+            <label>Código Fabricante</label>
+            <input type="text" id="codigoFabricante" name="codigoFabricante">
+        </div>
+
+        <div class="form-group">
+            <label>Dimensiones</label>
+            <div class="dimension-group">
+                <input type="number" id="dim1" name="dimLargo" placeholder="Largo">
+                <input type="number" id="dim2" name="dimAncho" placeholder="Ancho">
+                <input type="number" id="dim3" name="dimAlto" placeholder="Alto">
+                <label style="width:auto;">Unidad</label>
+                <select id="unidadDimensiones" name="unidadDimensiones"></select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Peso neto</label>
+            <div class="dimension-group" style="align-items:center;">
+                <input type="number" step="0.01" id="pesoNeto" name="pesoNeto">
+                <label style="width:auto;">Unidad</label>
+                <select id="unidadPesoNeto" name="unidadPesoNeto"></select>
+                
+                <label style="width:auto; margin-left:10px;">Peso bruto</label>
+                <input type="number" step="0.01" id="pesoBruto" name="pesoBruto">
+                <label style="width:auto;">Unidad</label>
+                <select id="unidadPesoBruto" name="unidadPesoBruto"></select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Fragilidad</label>
+            <div style="flex:1;">
+                <select id="fragilidadSelect" onchange="toggleSelection(this, 'fragilidad')"></select>
+                <input type="text" id="fragilidad" name="fragilidad" readonly class="readonly-input" style="margin-top:5px; width:100%;">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Peligrosidad</label>
+            <div style="flex:1;">
+                <select id="peligrosidadSelect" onchange="toggleSelection(this, 'peligrosidad')"></select>
+                <input type="text" id="peligrosidad" name="peligrosidad" readonly class="readonly-input" style="margin-top:5px; width:100%;">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Código de barras</label>
+            <input type="text" id="codigoBarras" name="codigoBarras" maxlength="165">
+        </div>
+
+        <div class="form-group">
+            <label>Lleva Trazabilidad</label>
+            <input type="checkbox" id="trazabilidad" name="trazabilidad" style="flex:none; width:auto;">
+        </div>
+
+        <div class="form-group">
+            <label>Reposición en (meses)</label>
+            <input type="number" id="reposicion" name="reposicion">
+        </div>
+
+        <div class="form-group">
+            <label>Notas adicionales</label>
+            <textarea id="notas" name="notas" maxlength="256" rows="3"></textarea>
+        </div>
+
+        <p class="mandatory-note">* Campos obligatorios</p>
+        <button type="button" class="btn-submit" onclick="enviarFormulario()">CARGAR / ENVIAR</button>
+    </form>
+</div>
+
+<script>
+    // 1. Set current date
+    document.getElementById('fecha').valueAsDate = new Date();
+
+    // 2. Logic to append/remove multiple selections (Translating the VBA logic)
+    function toggleSelection(selectElement, targetInputId) {
+        let valNuevo = selectElement.value;
+        if (!valNuevo) return;
+        
+        let inputTarget = document.getElementById(targetInputId);
+        let valAnterior = inputTarget.value;
+        let separador = " ; ";
+
+        if (valAnterior === "") {
+            inputTarget.value = valNuevo;
+        } else {
+            let list = valAnterior.split(separador);
+            let index = list.indexOf(valNuevo);
+            if (index === -1) {
+                // Not found, append it (If InStr = 0)
+                list.push(valNuevo);
+            } else {
+                // Found, remove it (Replace)
+                list.splice(index, 1);
+            }
+            inputTarget.value = list.join(separador);
+        }
+        selectElement.selectedIndex = 0; // Reset dropdown
+    }
+
+    // 3. Fetch and parse CSV to populate dropdowns
+    async function cargarDatosCSV() {
+        try {
+            const response = await fetch('auxiliar.csv');
+            const data = await response.text();
+            
+            const lineas = data.split('\n');
+            
+            // Set up arrays for unique values
+            const sets = {
+                correo: new Set(),
+                familia: new Set(),
+                superCategoria: new Set(),
+                unidad: new Set(),
+                norma: new Set(),
+                unidadDimensiones: new Set(),
+                unidadPeso: new Set(),
+                fragilidad: new Set(),
+                peligrosidad: new Set()
+            };
+
+            // Assuming headers are on line 0, start reading from line 1
+            for (let i = 1; i < lineas.length; i++) {
+                let columnas = lineas[i].split(';');
+                if (columnas.length < 13) continue;
+
+                if (columnas[12]) sets.correo.add(columnas[12].trim());
+                if (columnas[0]) sets.familia.add(columnas[0].trim());
+                if (columnas[2]) sets.superCategoria.add(columnas[2].trim());
+                if (columnas[5]) sets.unidad.add(columnas[5].trim());
+                if (columnas[6]) sets.norma.add(columnas[6].trim());
+                if (columnas[7]) sets.unidadDimensiones.add(columnas[7].trim());
+                if (columnas[8]) sets.unidadPeso.add(columnas[8].trim());
+                if (columnas[9]) sets.fragilidad.add(columnas[9].trim());
+                if (columnas[10]) sets.peligrosidad.add(columnas[10].trim());
+            }
+
+            // Function to populate standard selects
+            const poblarSelect = (id, setValores) => {
+                const select = document.getElementById(id);
+                select.innerHTML = '<option value="">Seleccione...</option>';
+                setValores.forEach(val => {
+                    let option = document.createElement('option');
+                    option.value = val;
+                    option.text = val;
+                    select.appendChild(option);
+                });
+            };
+
+            poblarSelect('correo', sets.correo);
+            poblarSelect('familia', sets.familia);
+            poblarSelect('superCategoria', sets.superCategoria);
+            poblarSelect('unidad', sets.unidad);
+            poblarSelect('norma', sets.norma);
+            poblarSelect('unidadDimensiones', sets.unidadDimensiones);
+            poblarSelect('unidadPesoNeto', sets.unidadPeso);
+            poblarSelect('unidadPesoBruto', sets.unidadPeso);
+            poblarSelect('fragilidadSelect', sets.fragilidad);
+            poblarSelect('peligrosidadSelect', sets.peligrosidad);
+
+        } catch (error) {
+            console.error('Error al cargar el CSV. Asegúrate de que auxiliar.csv esté en la misma carpeta.', error);
+        }
+    }
+
+    // Initialize CSV Data
+    cargarDatosCSV();
+
+    // 4. Submission Logic and Validation
+    function enviarFormulario() {
+        const form = document.getElementById('productForm');
+        
+        if (!form.checkValidity()) {
+            alert('Por favor complete todos los campos obligatorios (*).');
+            return;
+        }
+
+        const pesoNeto = parseFloat(document.getElementById('pesoNeto').value);
+        const pesoBruto = parseFloat(document.getElementById('pesoBruto').value);
+
+        if (!isNaN(pesoNeto) && !isNaN(pesoBruto)) {
+            if (pesoBruto < pesoNeto) {
+                alert('El Peso Bruto debe ser mayor o igual al Peso Neto.');
+                return;
+            }
+        }
+
+        // Construct email body
+        let bodyInfo = `REQUERIMIENTO DE NUEVO PRODUCTO\n\n`;
+        bodyInfo += `Usuario: ${document.getElementById('correo').value}\n`;
+        bodyInfo += `Fecha: ${document.getElementById('fecha').value}\n`;
+        bodyInfo += `Descripción: ${document.getElementById('descripcion').value}\n`;
+        bodyInfo += `Familia: ${document.getElementById('familia').value}\n`;
+        bodyInfo += `Super Categoría/Categoría: ${document.getElementById('superCategoria').value}\n`;
+        bodyInfo += `Unidad: ${document.getElementById('unidad').value}\n`;
+        bodyInfo += `Material: ${document.getElementById('material').value}\n`;
+        bodyInfo += `Marca/Fabricante: ${document.getElementById('marca').value}\n\n`;
+        
+        bodyInfo += `Fragilidad: ${document.getElementById('fragilidad').value}\n`;
+        bodyInfo += `Peligrosidad: ${document.getElementById('peligrosidad').value}\n`;
+        bodyInfo += `Lleva Trazabilidad: ${document.getElementById('trazabilidad').checked ? 'Sí' : 'No'}\n`;
+        bodyInfo += `Notas: ${document.getElementById('notas').value}\n`;
+
+        // Encode for email
+        const mailtoLink = `mailto:suministros@chediack.com.ar?subject=Alta Nuevo Producto - ${encodeURIComponent(document.getElementById('descripcion').value)}&body=${encodeURIComponent(bodyInfo)}`;
+        
+        // Open default mail client
+        window.location.href = mailtoLink;
+    }
+</script>
+
+</body>
+</html>
