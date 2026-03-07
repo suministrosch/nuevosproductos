@@ -24,7 +24,7 @@ Limpieza,Cubiertas,Aislaciones Térmicas y Acústicas : Espumas,Aislaciones Térmic
 Mecánica,Defensas y Barandas,Aislaciones Térmicas y Acústicas : Lana de vidrio,Aislaciones Térmicas y Acústicas,Lana de vidrio,lata,,,,,,,,,,11,Aislaciones Térmicas y Acústicas,36,Lana de vidrio
 Mobiliario Alojamiento,Encofrados y Andamios,Aislaciones Térmicas y Acústicas : Placas,Aislaciones Térmicas y Acústicas,Placas,lt,,,,,,,,,,11,Aislaciones Térmicas y Acústicas,177,Placas
 Mobiliario Oficina,Equipamiento de Alojamiento,Aislaciones Térmicas y Acústicas : Poliestireno expandido,Aislaciones Térmicas y Acústicas,Poliestireno expandido,m,,,,,,,,,,11,Aislaciones Térmicas y Acústicas,37,Poliestireno expandido
-Piping,Equipamiento de Cocina,"Alambrado : Postes, torniquetes y otros",Alambrado,"Postes, torniquetes y otros",m2,,,,,,,,,,13,Alambrado,41,"Postes, torniquetes y otros"
+Piping,Equipamiento de Cocina,Alambrado : Postes - torniquetes y otros,Alambrado,Postes - torniquetes y otros,m2,,,,,,,,,,13,Alambrado,41,Postes - torniquetes y otros
 Ropa / EPP,Equipamiento de Oficina,Alambres : Fardo aceitado,Alambres,Fardo aceitado,m3,,,,,,,,,,3,Alambres,14,Fardo aceitado
 Topografía,Equipos,Alambres : Galvanizado,Alambres,Galvanizado,mes,,,,,,,,,,3,Alambres,15,Galvanizado
 Varios,Explosivos,Alambres : Negro,Alambres,Negro,millares,,,,,,,,,,3,Alambres,13,Negro
@@ -40,7 +40,7 @@ Otro..,Fibra Optica,Alambres : Recocido,Alambres,Recocido,mm,,,,,,,,,,3,Alambres
 ,Informática,Asfaltos : Diluídos,Asfaltos,Diluídos,tambor,,,,,,,,,,10,Asfaltos,35,Diluídos
 ,Juntas,Asfaltos : Emulsiones,Asfaltos,Emulsiones,Ton,,,,,,,,,,10,Asfaltos,42,Emulsiones
 ,Laboratorio,Asfaltos : Modificados o plásticos,Asfaltos,Modificados o plásticos,un,,,,,,,,,,10,Asfaltos,43,Modificados o plásticos
-,Lubricantes,"Bulonería : Bulones, Tuercas y arandelas",Bulonería,"Bulones, Tuercas y arandelas",,,,,,,,,,,79,Bulonería,72,"Bulones, Tuercas y arandelas"
+,Lubricantes,Bulonería : Bulones - Tuercas y arandelas,Bulonería,Bulones - Tuercas y arandelas,,,,,,,,,,,79,Bulonería,72,Bulones - Tuercas y arandelas
 ,Maderas,Cadenas : Varios,Cadenas,Varios,,,,,,,,,,,49,Cadenas,125,Varios
 ,Mallas,Caños : Accesorios sanit y gas,Caños,Accesorios sanit y gas,,,,,,,,,,,52,Caños,185,Accesorios sanit y gas
 ,Mampuestos,Caños : Caños eléctricos,Caños,Caños eléctricos,,,,,,,,,,,52,Caños,184,Caños eléctricos
@@ -82,7 +82,7 @@ Otro..,Fibra Optica,Alambres : Recocido,Alambres,Recocido,mm,,,,,,,,,,3,Alambres
 ,,Encofrados y Andamios : Sistema PERI,Encofrados y Andamios,Sistema PERI,,,,,,,,,,,19,Encofrados y Andamios,59,Sistema PERI
 ,,Equipamiento de Alojamiento : Electrodomésticos de Alojamiento,Equipamiento de Alojamiento,Electrodomésticos de Alojamiento,,,,,,,,,,,90,Equipamiento de Alojamiento,301,Electrodomésticos de Alojamiento
 ,,Equipamiento de Alojamiento : Mobiliario menor,Equipamiento de Alojamiento,Mobiliario menor,,,,,,,,,,,90,Equipamiento de Alojamiento,291,Mobiliario menor
-,,"Equipamiento de Alojamiento : Ropa de Cama, toallas, cortinas",Equipamiento de Alojamiento,"Ropa de Cama, toallas, cortinas",,,,,,,,,,,90,Equipamiento de Alojamiento,290,"Ropa de Cama, toallas, cortinas"
+,,Equipamiento de Alojamiento : Ropa de Cama - toallas - cortinas,Equipamiento de Alojamiento,Ropa de Cama - toallas - cortinas,,,,,,,,,,,90,Equipamiento de Alojamiento,290,Ropa de Cama - toallas - cortinas
 ,,Equipamiento de Alojamiento : Varios,Equipamiento de Alojamiento,Varios,,,,,,,,,,,90,Equipamiento de Alojamiento,302,Varios
 ,,Equipamiento de Cocina : Electrodomésticos Mayores y Artefactos de Cocción,Equipamiento de Cocina,Electrodomésticos Mayores y Artefactos de Cocción,,,,,,,,,,,41,Equipamiento de Cocina,295,Electrodomésticos Mayores y Artefactos de Cocción
 ,,Equipamiento de Cocina : Varios,Equipamiento de Cocina,Varios,,,,,,,,,,,41,Equipamiento de Cocina,119,Varios
