@@ -236,25 +236,34 @@
         selectElement.selectedIndex = 0; 
     }
 
-    // Carga de CSV y población de listas
+    // Carga de CSV y población de listas (Actualizado para leer acentos)
     async function init() {
         try {
             const response = await fetch('auxiliar.csv');
             if (!response.ok) throw new Error();
-            const text = await response.text();
+            
+            // Leemos el archivo como ArrayBuffer para poder decodificarlo manualmente
+            const buffer = await response.arrayBuffer();
+            
+            // Forzamos la decodificación en ISO-8859-1 (el formato estándar de Excel en español)
+            const decoder = new TextDecoder('iso-8859-1');
+            const text = decoder.decode(buffer);
+            
             procesarCSV(text);
         } catch (e) {
             document.getElementById('local-notice').style.display = 'block';
         }
     }
 
+    // Actualizado para leer acentos en caso de subida manual
     document.getElementById('localCsvInput').addEventListener('change', function(e) {
         const reader = new FileReader();
         reader.onload = (event) => {
             procesarCSV(event.target.result);
             document.getElementById('local-notice').style.display = 'none';
         };
-        reader.readAsText(e.target.files[0]);
+        // Agregamos el parámetro 'ISO-8859-1' para que mantenga las eñes y tildes
+        reader.readAsText(e.target.files[0], 'ISO-8859-1');
     });
 
     function procesarCSV(data) {
@@ -368,9 +377,6 @@
             bodyText: bodyText
         };
 
-        // =========================================================================
-        // ⚠️ IMPORTANTE: PEGA AQUÍ TU URL DE GOOGLE APPS SCRIPT (ENTRE LAS COMILLAS)
-        // =========================================================================
         const scriptURL = 'https://script.google.com/macros/s/AKfycbwn4yxtGDw9NphNa7C5QPDT08HLZlGi1wDFgANyG1GnyT1zqkUexIcoNfUrKuv4PDGIlw/exec';
 
         // Enviamos la petición a Google
