@@ -71,6 +71,12 @@
             background-color: #0056b3;
             color: white;
         }
+        .btn-submit:disabled {
+            background-color: #cccccc;
+            border-color: #999999;
+            color: #666666;
+            cursor: not-allowed;
+        }
         .debug-box {
             background: #fff3cd;
             padding: 15px;
@@ -210,7 +216,7 @@
     const hoy = new Date();
     document.getElementById('fecha').value = hoy.toLocaleDateString('es-AR');
 
-    // Lógica de selección múltiple (Script Modelo)
+    // Lógica de selección múltiple
     function toggleSelection(selectElement, targetInputId) {
         const valNuevo = selectElement.value;
         if (!valNuevo) return;
@@ -291,13 +297,13 @@
         llenar('peligrosidadSelect', sets.peligrosidad);
     }
 
-    // FUNCIÓN OPTIMIZADA ENVIAR FORMULARIO
+    // FUNCIÓN PARA ENVIAR A GOOGLE APPS SCRIPT
     function enviarFormulario() {
         const form = document.getElementById('productForm');
         
-        // Validar requeridos
+        // Validar campos requeridos nativos de HTML
         if (!form.checkValidity()) {
-            alert("Por favor, complete los campos obligatorios marcados con *");
+            form.reportValidity(); 
             return;
         }
 
@@ -308,10 +314,17 @@
             alert("El Peso Bruto no puede ser menor al Peso Neto.");
             return;
         }
+        
+        // Capturar correo del usuario
+        const correoCarga = document.getElementById('correo').value;
+        if (!correoCarga) {
+            alert("Debe seleccionar un Usuario / Correo.");
+            return;
+        }
 
-        // Construcción del cuerpo (Body) del correo de forma segura
+        // Construcción del cuerpo (Body) del correo
         const campos = [
-            ["Usuario", document.getElementById('correo').value],
+            ["Usuario", correoCarga],
             ["Fecha", document.getElementById('fecha').value],
             ["Descripción", document.getElementById('descripcion').value],
             ["Familia", document.getElementById('familia').value],
@@ -333,16 +346,56 @@
         ];
 
         let bodyText = "REQUERIMIENTO DE NUEVO PRODUCTO\n" + "=".repeat(30) + "\n\n";
-        campos.forEach(cp => { if(cp[1]) bodyText += `${cp[0]}: ${cp[1]}\n`; });
+        campos.forEach(cp => { 
+            // Filtramos campos vacíos o con valores por defecto de la concatenación
+            if(cp[1] && cp[1].trim() !== "0" && cp[1].trim() !== "0 meses" && cp[1].trim() !== "x x") {
+                bodyText += `${cp[0]}: ${cp[1]}\n`; 
+            }
+        });
 
-        const mailto = "suministros@chediack.com.ar";
         const subject = "ALTA PRODUCTO: " + document.getElementById('descripcion').value;
-        
-        // Codificación final y apertura
-        const finalUrl = `mailto:${mailto}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyText)}`;
-        
-        // Intento de apertura directa
-        window.location.href = finalUrl;
+
+        // Cambiamos el texto del botón para que el usuario sepa que está cargando
+        const btn = document.querySelector('.btn-submit');
+        const textoOriginal = btn.innerText;
+        btn.innerText = "ENVIANDO CORREO...";
+        btn.disabled = true; // Desactivamos el botón para evitar que hagan doble clic
+
+        // Preparamos los datos en formato JSON
+        const payload = {
+            correoCarga: correoCarga,
+            subject: subject,
+            bodyText: bodyText
+        };
+
+        // =========================================================================
+        // ⚠️ IMPORTANTE: PEGA AQUÍ TU URL DE GOOGLE APPS SCRIPT (ENTRE LAS COMILLAS)
+        // =========================================================================
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwn4yxtGDw9NphNa7C5QPDT08HLZlGi1wDFgANyG1GnyT1zqkUexIcoNfUrKuv4PDGIlw/exec';
+
+        // Enviamos la petición a Google
+        fetch(scriptURL, {
+            method: 'POST',
+            mode: 'no-cors', // Evita bloqueos de seguridad del navegador
+            headers: {
+                'Content-Type': 'text/plain' 
+            },
+            body: JSON.stringify(payload)
+        })
+        .then(() => {
+            alert("¡El requerimiento fue enviado exitosamente!");
+            form.reset(); // Limpia todos los campos
+            document.getElementById('fecha').value = new Date().toLocaleDateString('es-AR'); // Repone la fecha
+        })
+        .catch(error => {
+            alert("Hubo un error de conexión al intentar enviar el correo.");
+            console.error('Error!', error);
+        })
+        .finally(() => {
+            // Restauramos el botón a su estado normal
+            btn.innerText = textoOriginal;
+            btn.disabled = false;
+        });
     }
 
     init();
