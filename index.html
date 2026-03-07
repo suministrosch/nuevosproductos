@@ -55,17 +55,27 @@
         .short-input { width: 80px !important; flex: none !important; }
         .readonly-input { background-color: #f0f0f0; cursor: not-allowed; }
         
-        .btn-submit {
-            display: block;
-            margin: 30px 0 0 auto;
+        /* Contenedor para alinear los botones a la derecha */
+        .button-group {
+            display: flex;
+            justify-content: flex-end;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .btn-submit, .btn-clear {
             padding: 12px 30px;
-            background-color: #ffffff;
-            border: 2px solid #0056b3;
-            color: #0056b3;
             cursor: pointer;
             font-weight: bold;
             text-transform: uppercase;
             transition: 0.3s;
+            border-radius: 4px;
+        }
+
+        .btn-submit {
+            background-color: #ffffff;
+            border: 2px solid #0056b3;
+            color: #0056b3;
         }
         .btn-submit:hover {
             background-color: #0056b3;
@@ -77,6 +87,17 @@
             color: #666666;
             cursor: not-allowed;
         }
+
+        .btn-clear {
+            background-color: #ffffff;
+            border: 2px solid #dc3545;
+            color: #dc3545;
+        }
+        .btn-clear:hover {
+            background-color: #dc3545;
+            color: white;
+        }
+
         .debug-box {
             background: #fff3cd;
             padding: 15px;
@@ -85,9 +106,47 @@
             border-radius: 5px;
             font-size: 13px;
         }
+
+        /* Pantalla de carga (Overlay) */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6); /* Fondo grisáceo semitransparente */
+            z-index: 9999;
+            display: none; /* Oculto por defecto */
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+            font-size: 20px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+        }
+        .spinner {
+            border: 6px solid #f3f3f3;
+            border-top: 6px solid #0056b3;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin-bottom: 15px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
     </style>
 </head>
 <body>
+
+<!-- Elemento para oscurecer la pantalla durante la carga -->
+<div id="loadingOverlay" class="overlay">
+    <div class="spinner"></div>
+    <div id="loadingText">Enviando correo, por favor espere...</div>
+</div>
 
 <div class="form-container">
     <div id="local-notice" class="debug-box" style="display:none;">
@@ -207,7 +266,11 @@
             <textarea id="notas" maxlength="256" rows="3"></textarea>
         </div>
 
-        <button type="button" class="btn-submit" onclick="enviarFormulario()">CARGAR / ENVIAR</button>
+        <!-- Botones agrupados -->
+        <div class="button-group">
+            <button type="button" class="btn-clear" onclick="limpiarFormulario()">BORRAR DATOS</button>
+            <button type="button" class="btn-submit" onclick="enviarFormulario()">CARGAR / ENVIAR</button>
+        </div>
     </form>
 </div>
 
@@ -215,6 +278,15 @@
     // Establecer fecha actual
     const hoy = new Date();
     document.getElementById('fecha').value = hoy.toLocaleDateString('es-AR');
+
+    // Función para limpiar el formulario con confirmación
+    function limpiarFormulario() {
+        if (confirm("¿Estás seguro de que deseas borrar todos los datos del formulario?")) {
+            document.getElementById('productForm').reset();
+            // Restablecer la fecha actual tras el reset
+            document.getElementById('fecha').value = new Date().toLocaleDateString('es-AR');
+        }
+    }
 
     // Lógica de selección múltiple
     function toggleSelection(selectElement, targetInputId) {
@@ -276,7 +348,6 @@
 
         filas.forEach((fila, i) => {
             if (i === 0 || !fila.trim()) return;
-            // Aquí está la corrección: cambiamos ';' por ','
             const c = fila.split(',');
             if (c[0]) sets.familia.add(c[0].trim());
             if (c[2]) sets.superCat.add(c[2].trim());
@@ -365,11 +436,9 @@
 
         const subject = "ALTA PRODUCTO: " + document.getElementById('descripcion').value;
 
-        // Cambiamos el texto del botón para que el usuario sepa que está cargando
-        const btn = document.querySelector('.btn-submit');
-        const textoOriginal = btn.innerText;
-        btn.innerText = "ENVIANDO CORREO...";
-        btn.disabled = true; // Desactivamos el botón para evitar que hagan doble clic
+        // Mostrar la pantalla de carga (overlay)
+        const overlay = document.getElementById('loadingOverlay');
+        overlay.style.display = 'flex';
 
         // Preparamos los datos en formato JSON
         const payload = {
@@ -399,9 +468,8 @@
             console.error('Error!', error);
         })
         .finally(() => {
-            // Restauramos el botón a su estado normal
-            btn.innerText = textoOriginal;
-            btn.disabled = false;
+            // Ocultar la pantalla de carga al terminar
+            overlay.style.display = 'none';
         });
     }
 
