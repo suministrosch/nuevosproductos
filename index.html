@@ -276,7 +276,8 @@
 
         filas.forEach((fila, i) => {
             if (i === 0 || !fila.trim()) return;
-            const c = fila.split(';');
+            // Aquí está la corrección: cambiamos ';' por ','
+            const c = fila.split(',');
             if (c[0]) sets.familia.add(c[0].trim());
             if (c[2]) sets.superCat.add(c[2].trim());
             if (c[5]) sets.unidad.add(c[5].trim());
