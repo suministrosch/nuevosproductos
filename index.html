@@ -388,9 +388,27 @@
             return;
         }
 
-        // Validar pesos
-        const n = parseFloat(document.getElementById('pesoNeto').value) || 0;
-        const b = parseFloat(document.getElementById('pesoBruto').value) || 0;
+        // ==========================================
+        // NUEVAS VALIDACIONES DE PESOS Y UNIDADES
+        // ==========================================
+        const pesoNetoInput = document.getElementById('pesoNeto').value.trim();
+        const unidadNetoInput = document.getElementById('unidadPesoNeto').value;
+        const n = parseFloat(pesoNetoInput) || 0;
+        
+        if (pesoNetoInput !== "" && !unidadNetoInput) {
+            alert("Por favor, seleccione una unidad para el Peso Neto.");
+            return;
+        }
+
+        const pesoBrutoInput = document.getElementById('pesoBruto').value.trim();
+        const unidadBrutoInput = document.getElementById('unidadPesoBruto').value;
+        const b = parseFloat(pesoBrutoInput) || 0;
+
+        if (pesoBrutoInput !== "" && !unidadBrutoInput) {
+            alert("Por favor, seleccione una unidad para el Peso Bruto.");
+            return;
+        }
+
         if (b > 0 && b < n) {
             alert("El Peso Bruto no puede ser menor al Peso Neto.");
             return;
@@ -403,7 +421,7 @@
             return;
         }
 
-        // Construcción del cuerpo (Body) del correo
+        // Construcción del cuerpo (Body) del correo y listado de valores
         const campos = [
             ["Usuario", correoCarga],
             ["Fecha", document.getElementById('fecha').value],
@@ -428,11 +446,14 @@
 
         let bodyText = "REQUERIMIENTO DE NUEVO PRODUCTO\n" + "=".repeat(30) + "\n\n";
         campos.forEach(cp => { 
-            // Filtramos campos vacíos o con valores por defecto de la concatenación
+            // Filtramos campos vacíos o con valores por defecto de la concatenación para el correo
             if(cp[1] && cp[1].trim() !== "0" && cp[1].trim() !== "0 meses" && cp[1].trim() !== "x x") {
                 bodyText += `${cp[0]}: ${cp[1]}\n`; 
             }
         });
+
+        // Extraemos un arreglo únicamente con los valores limpios, ideal para insertar en columnas de Google Sheets
+        const valoresParaSheet = campos.map(campo => campo[1]);
 
         const subject = "ALTA PRODUCTO: " + document.getElementById('descripcion').value;
 
@@ -440,11 +461,12 @@
         const overlay = document.getElementById('loadingOverlay');
         overlay.style.display = 'flex';
 
-        // Preparamos los datos en formato JSON
+        // Preparamos los datos en formato JSON agregando sheetData
         const payload = {
             correoCarga: correoCarga,
             subject: subject,
-            bodyText: bodyText
+            bodyText: bodyText,
+            sheetData: valoresParaSheet // <-- Nueva propiedad con el array de datos
         };
 
         const scriptURL = 'https://script.google.com/macros/s/AKfycbwn4yxtGDw9NphNa7C5QPDT08HLZlGi1wDFgANyG1GnyT1zqkUexIcoNfUrKuv4PDGIlw/exec';
@@ -459,12 +481,12 @@
             body: JSON.stringify(payload)
         })
         .then(() => {
-            alert("¡El requerimiento fue enviado exitosamente!");
+            alert("¡El requerimiento fue enviado y registrado exitosamente!");
             form.reset(); // Limpia todos los campos
             document.getElementById('fecha').value = new Date().toLocaleDateString('es-AR'); // Repone la fecha
         })
         .catch(error => {
-            alert("Hubo un error de conexión al intentar enviar el correo.");
+            alert("Hubo un error de conexión al intentar procesar el formulario.");
             console.error('Error!', error);
         })
         .finally(() => {
