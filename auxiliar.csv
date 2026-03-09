@@ -1,95 +1,95 @@
-Familia,Super CategorÌa filtrada,Super Cat - Cat,Super CategorÌa,CategorÌa,Unidad,Norma,Unidad dimensiones,Unidad peso,Fragilidad,Peligrosidad,Trazabilidad,Correos,,,CÛd. Super Cat.,Super CategorÌa,CÛdigo,CategorÌa
-Arquitectura,Aceros,Aceros : Cable de Acero,Aceros,Cable de Acero,$,IRAM,cm,gr,No es fr·gil,No es peligroso,Si,ines.meneghetti@chediack.com.ar,,,1,Aceros,9,Cable de Acero
-CarpinterÌa,Adhesivos y Selladores,Aceros : Com˙n,Aceros,Com˙n,aÒo,ISO,m,kg,Muy fr·gil,Explosivos,No,mariano.quiroga@chediack.com.ar,,,1,Aceros,1,Com˙n
-Comestible / Bebida,Aditivos,Aceros : Cortado y doblado,Aceros,Cortado y doblado,bolsa,CIRSOC,mm,Ton,Fr·gil,LÌquidos inflamables,,walter.retamal@chediack.com.ar,,,1,Aceros,130,Cortado y doblado
-ComunicaciÛn,Aglomerantes,Aceros : De uniÛn,Aceros,De uniÛn,cajÛn,DNV,pulgada,,Este lado arriba,LÌquidos comburentes,,alejandro.fernandez@chediack.com.ar,,,1,Aceros,2,De uniÛn
-Consumible FerreterÌa,Aislaciones HidrÛfugas,Aceros : Especial,Aceros,Especial,cm,-,,,Manipular con cuidado,Gases a presiÛn,,jeronimo.aranda@gmail.com,,,1,Aceros,4,Especial
-Consumible Herramientas,Aislaciones TÈrmicas y Ac˙sticas,Aceros : Inoxidable,Aceros,Inoxidable,cm2,,,,Sensible a la humedad,Corrosivo para los metales,,,,,1,Aceros,8,Inoxidable
+Familia,Super Categor√≠a filtrada,Super Cat - Cat,Super Categor√≠a,Categor√≠a,Unidad,Norma,Unidad dimensiones,Unidad peso,Fragilidad,Peligrosidad,Trazabilidad,Correos,,,C√≥d. Super Cat.,Super Categor√≠a,C√≥digo,Categor√≠a
+Arquitectura,Aceros,Aceros : Cable de Acero,Aceros,Cable de Acero,$,IRAM,cm,gr,No es fr√°gil,No es peligroso,Si,ines.meneghetti@chediack.com.ar,,,1,Aceros,9,Cable de Acero
+Carpinter√≠a,Adhesivos y Selladores,Aceros : Com√∫n,Aceros,Com√∫n,a√±o,ISO,m,kg,Muy fr√°gil,Explosivos,No,mariano.quiroga@chediack.com.ar,,,1,Aceros,1,Com√∫n
+Comestible / Bebida,Aditivos,Aceros : Cortado y doblado,Aceros,Cortado y doblado,bolsa,CIRSOC,mm,Ton,Fr√°gil,L√≠quidos inflamables,,walter.retamal@chediack.com.ar,,,1,Aceros,130,Cortado y doblado
+Comunicaci√≥n,Aglomerantes,Aceros : De uni√≥n,Aceros,De uni√≥n,caj√≥n,DNV,pulgada,,Este lado arriba,L√≠quidos comburentes,,alejandro.fernandez@chediack.com.ar,,,1,Aceros,2,De uni√≥n
+Consumible Ferreter√≠a,Aislaciones Hidr√≥fugas,Aceros : Especial,Aceros,Especial,cm,-,,,Manipular con cuidado,Gases a presi√≥n,,walter.retamal@chediack.com,,,1,Aceros,4,Especial
+Consumible Herramientas,Aislaciones T√©rmicas y Ac√∫sticas,Aceros : Inoxidable,Aceros,Inoxidable,cm2,,,,Sensible a la humedad,Corrosivo para los metales,,,,,1,Aceros,8,Inoxidable
 Consumible Oficina,Alambrado,Aceros : Mallas,Aceros,Mallas,cm3,,,,No apilable,Toxicidad aguda,,,,,1,Aceros,6,Mallas
-Electricidad,Alambres,Aceros : Pasadores,Aceros,Pasadores,dÌa,,,,Apilamiento limitado,IrritaciÛn cut·nea,,,,,1,Aceros,5,Pasadores
-Equipamiento laboratorio,Aridos,Aceros : Riel,Aceros,Riel,dm2,,,,Resiste apilamiento,Peligro por aspiraciÛn,,,,,1,Aceros,238,Riel
-Equipo,Asfaltos,Aceros : Tesado,Aceros,Tesado,dm3,,,,A granel,Peligro para M Amb. acu·tico,,,,,1,Aceros,7,Tesado
-Equipo / HSE,BulonerÌa,Adhesivos y Selladores : Adhesivo,Adhesivos y Selladores,Adhesivo,escalÛn,,,,Otro,,,,,,7,Adhesivos y Selladores,27,Adhesivo
-Est. Met·lica,Cadenas,Adhesivos y Selladores : Sellador,Adhesivos y Selladores,Sellador,GB,,,,,,,,,,7,Adhesivos y Selladores,28,Sellador
-Est. Met·lica / Equipo,CaÒos,Aditivos : Asfalto,Aditivos,Asfalto,Gl,,,,,,,,,,8,Aditivos,29,Asfalto
-Farmacia,CarpinterÌas,Aditivos : HormigÛn y morteros,Aditivos,HormigÛn y morteros,gr,,,,,,,,,,8,Aditivos,30,HormigÛn y morteros
+Electricidad,Alambres,Aceros : Pasadores,Aceros,Pasadores,d√≠a,,,,Apilamiento limitado,Irritaci√≥n cut√°nea,,,,,1,Aceros,5,Pasadores
+Equipamiento laboratorio,Aridos,Aceros : Riel,Aceros,Riel,dm2,,,,Resiste apilamiento,Peligro por aspiraci√≥n,,,,,1,Aceros,238,Riel
+Equipo,Asfaltos,Aceros : Tesado,Aceros,Tesado,dm3,,,,A granel,Peligro para M Amb. acu√°tico,,,,,1,Aceros,7,Tesado
+Equipo / HSE,Buloner√≠a,Adhesivos y Selladores : Adhesivo,Adhesivos y Selladores,Adhesivo,escal√≥n,,,,Otro,,,,,,7,Adhesivos y Selladores,27,Adhesivo
+Est. Met√°lica,Cadenas,Adhesivos y Selladores : Sellador,Adhesivos y Selladores,Sellador,GB,,,,,,,,,,7,Adhesivos y Selladores,28,Sellador
+Est. Met√°lica / Equipo,Ca√±os,Aditivos : Asfalto,Aditivos,Asfalto,Gl,,,,,,,,,,8,Aditivos,29,Asfalto
+Farmacia,Carpinter√≠as,Aditivos : Hormig√≥n y morteros,Aditivos,Hormig√≥n y morteros,gr,,,,,,,,,,8,Aditivos,30,Hormig√≥n y morteros
 Ferroviario,Carteles,Aditivos : Inyecciones,Aditivos,Inyecciones,Ha,,,,,,,,,,8,Aditivos,229,Inyecciones
 Gas domiciliario,Chapa,Aglomerantes : Cales,Aglomerantes,Cales,hm,,,,,,,,,,9,Aglomerantes,31,Cales
-HormigÛn,Cielorrasos,Aglomerantes : Cementos,Aglomerantes,Cementos,hm.m3,,,,,,,,,,9,Aglomerantes,32,Cementos
-HSE,ClimatizaciÛn,Aglomerantes : Otros,Aglomerantes,Otros,hora,,,,,,,,,,9,Aglomerantes,33,Otros
-Industrial,Combustibles,Aislaciones HidrÛfugas : Membranas,Aislaciones HidrÛfugas,Membranas,kg,,,,,,,,,,12,Aislaciones HidrÛfugas,39,Membranas
-Inform·tica,ConstrucciÛn en Seco,Aislaciones HidrÛfugas : Otros,Aislaciones HidrÛfugas,Otros,km,,,,,,,,,,12,Aislaciones HidrÛfugas,144,Otros
-Instrumentos,Cortinas,Aislaciones HidrÛfugas : Pinturas,Aislaciones HidrÛfugas,Pinturas,km.m3,,,,,,,,,,12,Aislaciones HidrÛfugas,40,Pinturas
-Limpieza,Cubiertas,Aislaciones TÈrmicas y Ac˙sticas : Espumas,Aislaciones TÈrmicas y Ac˙sticas,Espumas,Kwh,,,,,,,,,,11,Aislaciones TÈrmicas y Ac˙sticas,38,Espumas
-Mec·nica,Defensas y Barandas,Aislaciones TÈrmicas y Ac˙sticas : Lana de vidrio,Aislaciones TÈrmicas y Ac˙sticas,Lana de vidrio,lata,,,,,,,,,,11,Aislaciones TÈrmicas y Ac˙sticas,36,Lana de vidrio
-Mobiliario Alojamiento,Encofrados y Andamios,Aislaciones TÈrmicas y Ac˙sticas : Placas,Aislaciones TÈrmicas y Ac˙sticas,Placas,lt,,,,,,,,,,11,Aislaciones TÈrmicas y Ac˙sticas,177,Placas
-Mobiliario Oficina,Equipamiento de Alojamiento,Aislaciones TÈrmicas y Ac˙sticas : Poliestireno expandido,Aislaciones TÈrmicas y Ac˙sticas,Poliestireno expandido,m,,,,,,,,,,11,Aislaciones TÈrmicas y Ac˙sticas,37,Poliestireno expandido
+Hormig√≥n,Cielorrasos,Aglomerantes : Cementos,Aglomerantes,Cementos,hm.m3,,,,,,,,,,9,Aglomerantes,32,Cementos
+HSE,Climatizaci√≥n,Aglomerantes : Otros,Aglomerantes,Otros,hora,,,,,,,,,,9,Aglomerantes,33,Otros
+Industrial,Combustibles,Aislaciones Hidr√≥fugas : Membranas,Aislaciones Hidr√≥fugas,Membranas,kg,,,,,,,,,,12,Aislaciones Hidr√≥fugas,39,Membranas
+Inform√°tica,Construcci√≥n en Seco,Aislaciones Hidr√≥fugas : Otros,Aislaciones Hidr√≥fugas,Otros,km,,,,,,,,,,12,Aislaciones Hidr√≥fugas,144,Otros
+Instrumentos,Cortinas,Aislaciones Hidr√≥fugas : Pinturas,Aislaciones Hidr√≥fugas,Pinturas,km.m3,,,,,,,,,,12,Aislaciones Hidr√≥fugas,40,Pinturas
+Limpieza,Cubiertas,Aislaciones T√©rmicas y Ac√∫sticas : Espumas,Aislaciones T√©rmicas y Ac√∫sticas,Espumas,Kwh,,,,,,,,,,11,Aislaciones T√©rmicas y Ac√∫sticas,38,Espumas
+Mec√°nica,Defensas y Barandas,Aislaciones T√©rmicas y Ac√∫sticas : Lana de vidrio,Aislaciones T√©rmicas y Ac√∫sticas,Lana de vidrio,lata,,,,,,,,,,11,Aislaciones T√©rmicas y Ac√∫sticas,36,Lana de vidrio
+Mobiliario Alojamiento,Encofrados y Andamios,Aislaciones T√©rmicas y Ac√∫sticas : Placas,Aislaciones T√©rmicas y Ac√∫sticas,Placas,lt,,,,,,,,,,11,Aislaciones T√©rmicas y Ac√∫sticas,177,Placas
+Mobiliario Oficina,Equipamiento de Alojamiento,Aislaciones T√©rmicas y Ac√∫sticas : Poliestireno expandido,Aislaciones T√©rmicas y Ac√∫sticas,Poliestireno expandido,m,,,,,,,,,,11,Aislaciones T√©rmicas y Ac√∫sticas,37,Poliestireno expandido
 Piping,Equipamiento de Cocina,Alambrado : Postes - torniquetes y otros,Alambrado,Postes - torniquetes y otros,m2,,,,,,,,,,13,Alambrado,41,Postes - torniquetes y otros
 Ropa / EPP,Equipamiento de Oficina,Alambres : Fardo aceitado,Alambres,Fardo aceitado,m3,,,,,,,,,,3,Alambres,14,Fardo aceitado
-TopografÌa,Equipos,Alambres : Galvanizado,Alambres,Galvanizado,mes,,,,,,,,,,3,Alambres,15,Galvanizado
+Topograf√≠a,Equipos,Alambres : Galvanizado,Alambres,Galvanizado,mes,,,,,,,,,,3,Alambres,15,Galvanizado
 Varios,Explosivos,Alambres : Negro,Alambres,Negro,millares,,,,,,,,,,3,Alambres,13,Negro
-Vial,Ferroviario,Alambres : P˙as,Alambres,P˙as,ml,,,,,,,,,,3,Alambres,16,P˙as
+Vial,Ferroviario,Alambres : P√∫as,Alambres,P√∫as,ml,,,,,,,,,,3,Alambres,16,P√∫as
 Otro..,Fibra Optica,Alambres : Recocido,Alambres,Recocido,mm,,,,,,,,,,3,Alambres,17,Recocido
-,Fijaciones,Alambres : Tejido,Alambres,Tejido,n∞,,,,,,,,,,3,Alambres,18,Tejido
+,Fijaciones,Alambres : Tejido,Alambres,Tejido,n¬∞,,,,,,,,,,3,Alambres,18,Tejido
 ,Filtros,Aridos : Arcillas expandidas,Aridos,Arcillas expandidas,pares,,,,,,,,,,2,Aridos,11,Arcillas expandidas
-,Gasoducto,Aridos : Arenas silÌceas,Aridos,Arenas silÌceas,pie,,,,,,,,,,2,Aridos,10,Arenas silÌceas
+,Gasoducto,Aridos : Arenas sil√≠ceas,Aridos,Arenas sil√≠ceas,pie,,,,,,,,,,2,Aridos,10,Arenas sil√≠ceas
 ,Herrajes,Aridos : Otros,Aridos,Otros,pie2,,,,,,,,,,2,Aridos,12,Otros
 ,Herramienta Mayor,Aridos : Piedras trituradas,Aridos,Piedras trituradas,pulgada,,,,,,,,,,2,Aridos,3,Piedras trituradas
 ,Herramientas,Aridos : Rodados,Aridos,Rodados,pulgada2,,,,,,,,,,2,Aridos,242,Rodados
 ,Hormigones,Asfaltos : Comunes,Asfaltos,Comunes,rollo,,,,,,,,,,10,Asfaltos,34,Comunes
-,Inform·tica,Asfaltos : DiluÌdos,Asfaltos,DiluÌdos,tambor,,,,,,,,,,10,Asfaltos,35,DiluÌdos
+,Inform√°tica,Asfaltos : Dilu√≠dos,Asfaltos,Dilu√≠dos,tambor,,,,,,,,,,10,Asfaltos,35,Dilu√≠dos
 ,Juntas,Asfaltos : Emulsiones,Asfaltos,Emulsiones,Ton,,,,,,,,,,10,Asfaltos,42,Emulsiones
-,Laboratorio,Asfaltos : Modificados o pl·sticos,Asfaltos,Modificados o pl·sticos,un,,,,,,,,,,10,Asfaltos,43,Modificados o pl·sticos
-,Lubricantes,BulonerÌa : Bulones - Tuercas y arandelas,BulonerÌa,Bulones - Tuercas y arandelas,,,,,,,,,,,79,BulonerÌa,72,Bulones - Tuercas y arandelas
+,Laboratorio,Asfaltos : Modificados o pl√°sticos,Asfaltos,Modificados o pl√°sticos,un,,,,,,,,,,10,Asfaltos,43,Modificados o pl√°sticos
+,Lubricantes,Buloner√≠a : Bulones - Tuercas y arandelas,Buloner√≠a,Bulones - Tuercas y arandelas,,,,,,,,,,,79,Buloner√≠a,72,Bulones - Tuercas y arandelas
 ,Maderas,Cadenas : Varios,Cadenas,Varios,,,,,,,,,,,49,Cadenas,125,Varios
-,Mallas,CaÒos : Accesorios sanit y gas,CaÒos,Accesorios sanit y gas,,,,,,,,,,,52,CaÒos,185,Accesorios sanit y gas
-,Mampuestos,CaÒos : CaÒos elÈctricos,CaÒos,CaÒos elÈctricos,,,,,,,,,,,52,CaÒos,184,CaÒos elÈctricos
-,Materiales de Consumo,CaÒos : CaÒos Galvanizados y Epoxi,CaÒos,CaÒos Galvanizados y Epoxi,,,,,,,,,,,52,CaÒos,183,CaÒos Galvanizados y Epoxi
-,Materiales ElÈctricos,CaÒos : Chapa ARSA,CaÒos,Chapa ARSA,,,,,,,,,,,52,CaÒos,127,Chapa ARSA
-,Materiales Gas,CaÒos : Gasoducto,CaÒos,Gasoducto,,,,,,,,,,,52,CaÒos,250,Gasoducto
-,Materiales Planta EPC - Allkem,CaÒos : HormigÛn,CaÒos,HormigÛn,,,,,,,,,,,52,CaÒos,128,HormigÛn
-,Materiales Puentes,CaÒos : Uniones de CaÒos,CaÒos,Uniones de CaÒos,,,,,,,,,,,52,CaÒos,304,Uniones de CaÒos
-,Materiales Sanitarios,CarpinterÌas : Cercos y portones,CarpinterÌas,Cercos y portones,,,,,,,,,,,15,CarpinterÌas,46,Cercos y portones
-,Materiales Varios,CarpinterÌas : Frente de placard,CarpinterÌas,Frente de placard,,,,,,,,,,,15,CarpinterÌas,167,Frente de placard
-,Membranas,CarpinterÌas : Marcos y premarcos,CarpinterÌas,Marcos y premarcos,,,,,,,,,,,15,CarpinterÌas,49,Marcos y premarcos
-,Mesadas,CarpinterÌas : Mosquiteros,CarpinterÌas,Mosquiteros,,,,,,,,,,,15,CarpinterÌas,50,Mosquiteros
-,Mezcla Asf·ltica,CarpinterÌas : Puertas,CarpinterÌas,Puertas,,,,,,,,,,,15,CarpinterÌas,47,Puertas
-,Morteros,CarpinterÌas : Ventanas,CarpinterÌas,Ventanas,,,,,,,,,,,15,CarpinterÌas,48,Ventanas
-,Muros de ContenciÛn,Carteles : Seguridad de obra,Carteles,Seguridad de obra,,,,,,,,,,,62,Carteles,154,Seguridad de obra
-,Ornamentos,Carteles : SeÒalizaciÛn vertical,Carteles,SeÒalizaciÛn vertical,,,,,,,,,,,62,Carteles,153,SeÒalizaciÛn vertical
+,Mallas,Ca√±os : Accesorios sanit y gas,Ca√±os,Accesorios sanit y gas,,,,,,,,,,,52,Ca√±os,185,Accesorios sanit y gas
+,Mampuestos,Ca√±os : Ca√±os el√©ctricos,Ca√±os,Ca√±os el√©ctricos,,,,,,,,,,,52,Ca√±os,184,Ca√±os el√©ctricos
+,Materiales de Consumo,Ca√±os : Ca√±os Galvanizados y Epoxi,Ca√±os,Ca√±os Galvanizados y Epoxi,,,,,,,,,,,52,Ca√±os,183,Ca√±os Galvanizados y Epoxi
+,Materiales El√©ctricos,Ca√±os : Chapa ARSA,Ca√±os,Chapa ARSA,,,,,,,,,,,52,Ca√±os,127,Chapa ARSA
+,Materiales Gas,Ca√±os : Gasoducto,Ca√±os,Gasoducto,,,,,,,,,,,52,Ca√±os,250,Gasoducto
+,Materiales Planta EPC - Allkem,Ca√±os : Hormig√≥n,Ca√±os,Hormig√≥n,,,,,,,,,,,52,Ca√±os,128,Hormig√≥n
+,Materiales Puentes,Ca√±os : Uniones de Ca√±os,Ca√±os,Uniones de Ca√±os,,,,,,,,,,,52,Ca√±os,304,Uniones de Ca√±os
+,Materiales Sanitarios,Carpinter√≠as : Cercos y portones,Carpinter√≠as,Cercos y portones,,,,,,,,,,,15,Carpinter√≠as,46,Cercos y portones
+,Materiales Varios,Carpinter√≠as : Frente de placard,Carpinter√≠as,Frente de placard,,,,,,,,,,,15,Carpinter√≠as,167,Frente de placard
+,Membranas,Carpinter√≠as : Marcos y premarcos,Carpinter√≠as,Marcos y premarcos,,,,,,,,,,,15,Carpinter√≠as,49,Marcos y premarcos
+,Mesadas,Carpinter√≠as : Mosquiteros,Carpinter√≠as,Mosquiteros,,,,,,,,,,,15,Carpinter√≠as,50,Mosquiteros
+,Mezcla Asf√°ltica,Carpinter√≠as : Puertas,Carpinter√≠as,Puertas,,,,,,,,,,,15,Carpinter√≠as,47,Puertas
+,Morteros,Carpinter√≠as : Ventanas,Carpinter√≠as,Ventanas,,,,,,,,,,,15,Carpinter√≠as,48,Ventanas
+,Muros de Contenci√≥n,Carteles : Seguridad de obra,Carteles,Seguridad de obra,,,,,,,,,,,62,Carteles,154,Seguridad de obra
+,Ornamentos,Carteles : Se√±alizaci√≥n vertical,Carteles,Se√±alizaci√≥n vertical,,,,,,,,,,,62,Carteles,153,Se√±alizaci√≥n vertical
 ,Pavimentos,Carteles : Varios,Carteles,Varios,,,,,,,,,,,62,Carteles,155,Varios
 ,Perfiles,Chapa : Acero 1045 y Hardox,Chapa,Acero 1045 y Hardox,,,,,,,,,,,5,Chapa,243,Acero 1045 y Hardox
 ,Pigmentos,Chapa : Doble decapada,Chapa,Doble decapada,,,,,,,,,,,5,Chapa,22,Doble decapada
 ,Pinturas,Chapa : Galvanizada,Chapa,Galvanizada,,,,,,,,,,,5,Chapa,23,Galvanizada
-,Pisos y ZÛcalos,Chapa : Negra,Chapa,Negra,,,,,,,,,,,5,Chapa,24,Negra
+,Pisos y Z√≥calos,Chapa : Negra,Chapa,Negra,,,,,,,,,,,5,Chapa,24,Negra
 ,Planchuela,Cielorrasos : Varios,Cielorrasos,Varios,,,,,,,,,,,47,Cielorrasos,122,Varios
-,Premoldeados de H∫,ClimatizaciÛn : Aire Acondicionado y CalefacciÛn Industrial,ClimatizaciÛn,Aire Acondicionado y CalefacciÛn Industrial,,,,,,,,,,,89,ClimatizaciÛn,296,Aire Acondicionado y CalefacciÛn Industrial
-,Radio y TelefonÌa,ClimatizaciÛn : ClimatizaciÛn Menor,ClimatizaciÛn,ClimatizaciÛn Menor,,,,,,,,,,,89,ClimatizaciÛn,303,ClimatizaciÛn Menor
+,Premoldeados de H¬∫,Climatizaci√≥n : Aire Acondicionado y Calefacci√≥n Industrial,Climatizaci√≥n,Aire Acondicionado y Calefacci√≥n Industrial,,,,,,,,,,,89,Climatizaci√≥n,296,Aire Acondicionado y Calefacci√≥n Industrial
+,Radio y Telefon√≠a,Climatizaci√≥n : Climatizaci√≥n Menor,Climatizaci√≥n,Climatizaci√≥n Menor,,,,,,,,,,,89,Climatizaci√≥n,303,Climatizaci√≥n Menor
 ,Repuestos,Combustibles : Aditivos,Combustibles,Aditivos,,,,,,,,,,,16,Combustibles,268,Aditivos
 ,Revestimientos,Combustibles : Varios,Combustibles,Varios,,,,,,,,,,,16,Combustibles,52,Varios
-,Ropa de Trabajo,ConstrucciÛn en Seco : Varios,ConstrucciÛn en Seco,Varios,,,,,,,,,,,17,ConstrucciÛn en Seco,53,Varios
+,Ropa de Trabajo,Construcci√≥n en Seco : Varios,Construcci√≥n en Seco,Varios,,,,,,,,,,,17,Construcci√≥n en Seco,53,Varios
 ,Seguridad Industrial,Cortinas : Varios,Cortinas,Varios,,,,,,,,,,,65,Cortinas,163,Varios
-,Servicios,Cubiertas : Cer·micas y de H∫,Cubiertas,Cer·micas y de H∫,,,,,,,,,,,4,Cubiertas,20,Cer·micas y de H∫
-,Suelos,Cubiertas : Met·licas,Cubiertas,Met·licas,,,,,,,,,,,4,Cubiertas,19,Met·licas
-,Terminaciones,Cubiertas : Pl·sticas,Cubiertas,Pl·sticas,,,,,,,,,,,4,Cubiertas,21,Pl·sticas
-,TopografÌa,Defensas y Barandas : Barandas,Defensas y Barandas,Barandas,,,,,,,,,,,14,Defensas y Barandas,45,Barandas
+,Servicios,Cubiertas : Cer√°micas y de H¬∫,Cubiertas,Cer√°micas y de H¬∫,,,,,,,,,,,4,Cubiertas,20,Cer√°micas y de H¬∫
+,Suelos,Cubiertas : Met√°licas,Cubiertas,Met√°licas,,,,,,,,,,,4,Cubiertas,19,Met√°licas
+,Terminaciones,Cubiertas : Pl√°sticas,Cubiertas,Pl√°sticas,,,,,,,,,,,4,Cubiertas,21,Pl√°sticas
+,Topograf√≠a,Defensas y Barandas : Barandas,Defensas y Barandas,Barandas,,,,,,,,,,,14,Defensas y Barandas,45,Barandas
 ,Tubo,Defensas y Barandas : Defensas,Defensas y Barandas,Defensas,,,,,,,,,,,14,Defensas y Barandas,44,Defensas
 ,Varios Generales,Encofrados y Andamios : Accesorios,Encofrados y Andamios,Accesorios,,,,,,,,,,,19,Encofrados y Andamios,62,Accesorios
 ,Vidrios,Encofrados y Andamios : Andamios,Encofrados y Andamios,Andamios,,,,,,,,,,,19,Encofrados y Andamios,61,Andamios
-,ZinguerÌa,Encofrados y Andamios : Encofrados,Encofrados y Andamios,Encofrados,,,,,,,,,,,19,Encofrados y Andamios,233,Encofrados
+,Zinguer√≠a,Encofrados y Andamios : Encofrados,Encofrados y Andamios,Encofrados,,,,,,,,,,,19,Encofrados y Andamios,233,Encofrados
 ,,Encofrados y Andamios : Moldes,Encofrados y Andamios,Moldes,,,,,,,,,,,19,Encofrados y Andamios,60,Moldes
 ,,Encofrados y Andamios : Sistema EFCO,Encofrados y Andamios,Sistema EFCO,,,,,,,,,,,19,Encofrados y Andamios,147,Sistema EFCO
 ,,Encofrados y Andamios : Sistema PERI,Encofrados y Andamios,Sistema PERI,,,,,,,,,,,19,Encofrados y Andamios,59,Sistema PERI
-,,Equipamiento de Alojamiento : ElectrodomÈsticos de Alojamiento,Equipamiento de Alojamiento,ElectrodomÈsticos de Alojamiento,,,,,,,,,,,90,Equipamiento de Alojamiento,301,ElectrodomÈsticos de Alojamiento
+,,Equipamiento de Alojamiento : Electrodom√©sticos de Alojamiento,Equipamiento de Alojamiento,Electrodom√©sticos de Alojamiento,,,,,,,,,,,90,Equipamiento de Alojamiento,301,Electrodom√©sticos de Alojamiento
 ,,Equipamiento de Alojamiento : Mobiliario menor,Equipamiento de Alojamiento,Mobiliario menor,,,,,,,,,,,90,Equipamiento de Alojamiento,291,Mobiliario menor
 ,,Equipamiento de Alojamiento : Ropa de Cama - toallas - cortinas,Equipamiento de Alojamiento,Ropa de Cama - toallas - cortinas,,,,,,,,,,,90,Equipamiento de Alojamiento,290,Ropa de Cama - toallas - cortinas
 ,,Equipamiento de Alojamiento : Varios,Equipamiento de Alojamiento,Varios,,,,,,,,,,,90,Equipamiento de Alojamiento,302,Varios
-,,Equipamiento de Cocina : ElectrodomÈsticos Mayores y Artefactos de CocciÛn,Equipamiento de Cocina,ElectrodomÈsticos Mayores y Artefactos de CocciÛn,,,,,,,,,,,41,Equipamiento de Cocina,295,ElectrodomÈsticos Mayores y Artefactos de CocciÛn
+,,Equipamiento de Cocina : Electrodom√©sticos Mayores y Artefactos de Cocci√≥n,Equipamiento de Cocina,Electrodom√©sticos Mayores y Artefactos de Cocci√≥n,,,,,,,,,,,41,Equipamiento de Cocina,295,Electrodom√©sticos Mayores y Artefactos de Cocci√≥n
 ,,Equipamiento de Cocina : Varios,Equipamiento de Cocina,Varios,,,,,,,,,,,41,Equipamiento de Cocina,119,Varios
 ,,Equipamiento de Oficina : Equipamiento Mayor,Equipamiento de Oficina,Equipamiento Mayor,,,,,,,,,,,50,Equipamiento de Oficina,306,Equipamiento Mayor
 ,,Equipamiento de Oficina : Equipamiento menor,Equipamiento de Oficina,Equipamiento menor,,,,,,,,,,,50,Equipamiento de Oficina,289,Equipamiento menor
 ,,Equipamiento de Oficina : Imprenta,Equipamiento de Oficina,Imprenta,,,,,,,,,,,50,Equipamiento de Oficina,269,Imprenta
-,,Equipamiento de Oficina : LibrerÌa,Equipamiento de Oficina,LibrerÌa,,,,,,,,,,,50,Equipamiento de Oficina,270,LibrerÌa
+,,Equipamiento de Oficina : Librer√≠a,Equipamiento de Oficina,Librer√≠a,,,,,,,,,,,50,Equipamiento de Oficina,270,Librer√≠a
 ,,Equipamiento de Oficina : Mobiliario Mayor,Equipamiento de Oficina,Mobiliario Mayor,,,,,,,,,,,50,Equipamiento de Oficina,293,Mobiliario Mayor
 ,,Equipamiento de Oficina : Mobiliario menor,Equipamiento de Oficina,Mobiliario menor,,,,,,,,,,,50,Equipamiento de Oficina,141,Mobiliario menor
 ,,Equipamiento de Oficina : Varios,Equipamiento de Oficina,Varios,,,,,,,,,,,50,Equipamiento de Oficina,126,Varios
@@ -104,26 +104,26 @@ Otro..,Fibra Optica,Alambres : Recocido,Alambres,Recocido,mm,,,,,,,,,,3,Alambres
 ,,Ferroviario : Materiales,Ferroviario,Materiales,,,,,,,,,,,84,Ferroviario,265,Materiales
 ,,Fibra Optica : Materiales Varios,Fibra Optica,Materiales Varios,,,,,,,,,,,83,Fibra Optica,259,Materiales Varios
 ,,Fijaciones : Anclajes,Fijaciones,Anclajes,,,,,,,,,,,22,Fijaciones,241,Anclajes
-,,Fijaciones : BulÛn,Fijaciones,BulÛn,,,,,,,,,,,22,Fijaciones,240,BulÛn
+,,Fijaciones : Bul√≥n,Fijaciones,Bul√≥n,,,,,,,,,,,22,Fijaciones,240,Bul√≥n
 ,,Fijaciones : Clavos,Fijaciones,Clavos,,,,,,,,,,,22,Fijaciones,70,Clavos
 ,,Fijaciones : Remaches,Fijaciones,Remaches,,,,,,,,,,,22,Fijaciones,73,Remaches
 ,,Fijaciones : Tarugos y brocas,Fijaciones,Tarugos y brocas,,,,,,,,,,,22,Fijaciones,69,Tarugos y brocas
 ,,Fijaciones : Tornillos,Fijaciones,Tornillos,,,,,,,,,,,22,Fijaciones,71,Tornillos
 ,,Filtros : De aceite,Filtros,De aceite,,,,,,,,,,,23,Filtros,77,De aceite
 ,,Filtros : De agua,Filtros,De agua,,,,,,,,,,,23,Filtros,263,De agua
-,,Filtros : De aire h˙medo,Filtros,De aire h˙medo,,,,,,,,,,,23,Filtros,75,De aire h˙medo
+,,Filtros : De aire h√∫medo,Filtros,De aire h√∫medo,,,,,,,,,,,23,Filtros,75,De aire h√∫medo
 ,,Filtros : De aire seco,Filtros,De aire seco,,,,,,,,,,,23,Filtros,74,De aire seco
 ,,Filtros : De combustible,Filtros,De combustible,,,,,,,,,,,23,Filtros,76,De combustible
 ,,Gasoducto : Accesorios,Gasoducto,Accesorios,,,,,,,,,,,82,Gasoducto,254,Accesorios
-,,Gasoducto : CatÛdica - PAT,Gasoducto,CatÛdica - PAT,,,,,,,,,,,82,Gasoducto,256,CatÛdica - PAT
+,,Gasoducto : Cat√≥dica - PAT,Gasoducto,Cat√≥dica - PAT,,,,,,,,,,,82,Gasoducto,256,Cat√≥dica - PAT
 ,,Gasoducto : Instrumentos,Gasoducto,Instrumentos,,,,,,,,,,,82,Gasoducto,255,Instrumentos
 ,,Gasoducto : Mantenimiento,Gasoducto,Mantenimiento,,,,,,,,,,,82,Gasoducto,261,Mantenimiento
 ,,Gasoducto : Paquetizados,Gasoducto,Paquetizados,,,,,,,,,,,82,Gasoducto,251,Paquetizados
 ,,Gasoducto : Repuestos,Gasoducto,Repuestos,,,,,,,,,,,82,Gasoducto,260,Repuestos
 ,,Gasoducto : Revestimiento,Gasoducto,Revestimiento,,,,,,,,,,,82,Gasoducto,257,Revestimiento
 ,,Gasoducto : Soldadura,Gasoducto,Soldadura,,,,,,,,,,,82,Gasoducto,258,Soldadura
-,,Gasoducto : Tubos - CaÒos,Gasoducto,Tubos - CaÒos,,,,,,,,,,,82,Gasoducto,252,Tubos - CaÒos
-,,Gasoducto : V·lvulas,Gasoducto,V·lvulas,,,,,,,,,,,82,Gasoducto,253,V·lvulas
+,,Gasoducto : Tubos - Ca√±os,Gasoducto,Tubos - Ca√±os,,,,,,,,,,,82,Gasoducto,252,Tubos - Ca√±os
+,,Gasoducto : V√°lvulas,Gasoducto,V√°lvulas,,,,,,,,,,,82,Gasoducto,253,V√°lvulas
 ,,Herrajes : Balancines y pomos,Herrajes,Balancines y pomos,,,,,,,,,,,63,Herrajes,159,Balancines y pomos
 ,,Herrajes : Cerraduras,Herrajes,Cerraduras,,,,,,,,,,,63,Herrajes,160,Cerraduras
 ,,Herrajes : Otros,Herrajes,Otros,,,,,,,,,,,63,Herrajes,161,Otros
@@ -132,11 +132,11 @@ Otro..,Fibra Optica,Alambres : Recocido,Alambres,Recocido,mm,,,,,,,,,,3,Alambres
 ,,Herramientas : De obra,Herramientas,De obra,,,,,,,,,,,48,Herramientas,123,De obra
 ,,Herramientas : De taller,Herramientas,De taller,,,,,,,,,,,48,Herramientas,124,De taller
 ,,Hormigones : Varios,Hormigones,Varios,,,,,,,,,,,24,Hormigones,78,Varios
-,,Inform·tica : Accesorios ComputaciÛn,Inform·tica,Accesorios ComputaciÛn,,,,,,,,,,,39,Inform·tica,283,Accesorios ComputaciÛn
-,,Inform·tica : Hardware,Inform·tica,Hardware,,,,,,,,,,,39,Inform·tica,281,Hardware
-,,Inform·tica : Insumos ComputaciÛn,Inform·tica,Insumos ComputaciÛn,,,,,,,,,,,39,Inform·tica,284,Insumos ComputaciÛn
-,,Inform·tica : Software,Inform·tica,Software,,,,,,,,,,,39,Inform·tica,282,Software
-,,Inform·tica : Varios,Inform·tica,Varios,,,,,,,,,,,39,Inform·tica,117,Varios
+,,Inform√°tica : Accesorios Computaci√≥n,Inform√°tica,Accesorios Computaci√≥n,,,,,,,,,,,39,Inform√°tica,283,Accesorios Computaci√≥n
+,,Inform√°tica : Hardware,Inform√°tica,Hardware,,,,,,,,,,,39,Inform√°tica,281,Hardware
+,,Inform√°tica : Insumos Computaci√≥n,Inform√°tica,Insumos Computaci√≥n,,,,,,,,,,,39,Inform√°tica,284,Insumos Computaci√≥n
+,,Inform√°tica : Software,Inform√°tica,Software,,,,,,,,,,,39,Inform√°tica,282,Software
+,,Inform√°tica : Varios,Inform√°tica,Varios,,,,,,,,,,,39,Inform√°tica,117,Varios
 ,,Juntas : Pavimentos,Juntas,Pavimentos,,,,,,,,,,,64,Juntas,162,Pavimentos
 ,,Juntas : Pisos,Juntas,Pisos,,,,,,,,,,,64,Juntas,172,Pisos
 ,,Laboratorio : Varios de Consumo,Laboratorio,Varios de Consumo,,,,,,,,,,,44,Laboratorio,120,Varios de Consumo
@@ -145,17 +145,17 @@ Otro..,Fibra Optica,Alambres : Recocido,Alambres,Recocido,mm,,,,,,,,,,3,Alambres
 ,,Lubricantes : Grasas,Lubricantes,Grasas,,,,,,,,,,,25,Lubricantes,80,Grasas
 ,,Maderas : Varios,Maderas,Varios,,,,,,,,,,,26,Maderas,82,Varios
 ,,Mallas : Metal desplegado,Mallas,Metal desplegado,,,,,,,,,,,6,Mallas,25,Metal desplegado
-,,Mallas : Pl·sticas,Mallas,Pl·sticas,,,,,,,,,,,6,Mallas,26,Pl·sticas
-,,Mampuestos : Cer·mico hueco,Mampuestos,Cer·mico hueco,,,,,,,,,,,27,Mampuestos,83,Cer·mico hueco
-,,Mampuestos : Cer·mico macizo,Mampuestos,Cer·mico macizo,,,,,,,,,,,27,Mampuestos,84,Cer·mico macizo
-,,Mampuestos : De HormigÛn,Mampuestos,De HormigÛn,,,,,,,,,,,27,Mampuestos,85,De HormigÛn
+,,Mallas : Pl√°sticas,Mallas,Pl√°sticas,,,,,,,,,,,6,Mallas,26,Pl√°sticas
+,,Mampuestos : Cer√°mico hueco,Mampuestos,Cer√°mico hueco,,,,,,,,,,,27,Mampuestos,83,Cer√°mico hueco
+,,Mampuestos : Cer√°mico macizo,Mampuestos,Cer√°mico macizo,,,,,,,,,,,27,Mampuestos,84,Cer√°mico macizo
+,,Mampuestos : De Hormig√≥n,Mampuestos,De Hormig√≥n,,,,,,,,,,,27,Mampuestos,85,De Hormig√≥n
 ,,Mampuestos : Otros,Mampuestos,Otros,,,,,,,,,,,27,Mampuestos,86,Otros
 ,,Materiales de Consumo : Varios,Materiales de Consumo,Varios,,,,,,,,,,,54,Materiales de Consumo,136,Varios
-,,Materiales ElÈctricos : Artefactos,Materiales ElÈctricos,Artefactos,,,,,,,,,,,18,Materiales ElÈctricos,55,Artefactos
-,,Materiales ElÈctricos : Cables y Conductores,Materiales ElÈctricos,Cables y Conductores,,,,,,,,,,,18,Materiales ElÈctricos,56,Cables y Conductores
-,,Materiales ElÈctricos : Cajas y accesorios,Materiales ElÈctricos,Cajas y accesorios,,,,,,,,,,,18,Materiales ElÈctricos,54,Cajas y accesorios
-,,Materiales ElÈctricos : Tableros,Materiales ElÈctricos,Tableros,,,,,,,,,,,18,Materiales ElÈctricos,57,Tableros
-,,Materiales ElÈctricos : Tubos y l·mparas,Materiales ElÈctricos,Tubos y l·mparas,,,,,,,,,,,18,Materiales ElÈctricos,58,Tubos y l·mparas
+,,Materiales El√©ctricos : Artefactos,Materiales El√©ctricos,Artefactos,,,,,,,,,,,18,Materiales El√©ctricos,55,Artefactos
+,,Materiales El√©ctricos : Cables y Conductores,Materiales El√©ctricos,Cables y Conductores,,,,,,,,,,,18,Materiales El√©ctricos,56,Cables y Conductores
+,,Materiales El√©ctricos : Cajas y accesorios,Materiales El√©ctricos,Cajas y accesorios,,,,,,,,,,,18,Materiales El√©ctricos,54,Cajas y accesorios
+,,Materiales El√©ctricos : Tableros,Materiales El√©ctricos,Tableros,,,,,,,,,,,18,Materiales El√©ctricos,57,Tableros
+,,Materiales El√©ctricos : Tubos y l√°mparas,Materiales El√©ctricos,Tubos y l√°mparas,,,,,,,,,,,18,Materiales El√©ctricos,58,Tubos y l√°mparas
 ,,Materiales Gas : Accesorios,Materiales Gas,Accesorios,,,,,,,,,,,35,Materiales Gas,113,Accesorios
 ,,Materiales Gas : Artefactos,Materiales Gas,Artefactos,,,,,,,,,,,35,Materiales Gas,110,Artefactos
 ,,Materiales Gas : Consumibles,Materiales Gas,Consumibles,,,,,,,,,,,35,Materiales Gas,299,Consumibles
@@ -168,8 +168,8 @@ Otro..,Fibra Optica,Alambres : Recocido,Alambres,Recocido,mm,,,,,,,,,,3,Alambres
 ,,Materiales Sanitarios : Accesorios,Materiales Sanitarios,Accesorios,,,,,,,,,,,34,Materiales Sanitarios,109,Accesorios
 ,,Materiales Sanitarios : Artefactos,Materiales Sanitarios,Artefactos,,,,,,,,,,,34,Materiales Sanitarios,105,Artefactos
 ,,Materiales Sanitarios : Equipamiento,Materiales Sanitarios,Equipamiento,,,,,,,,,,,34,Materiales Sanitarios,108,Equipamiento
-,,Materiales Sanitarios : GriferÌa,Materiales Sanitarios,GriferÌa,,,,,,,,,,,34,Materiales Sanitarios,106,GriferÌa
-,,Materiales Sanitarios : Llaves y v·lvulas,Materiales Sanitarios,Llaves y v·lvulas,,,,,,,,,,,34,Materiales Sanitarios,107,Llaves y v·lvulas
+,,Materiales Sanitarios : Grifer√≠a,Materiales Sanitarios,Grifer√≠a,,,,,,,,,,,34,Materiales Sanitarios,106,Grifer√≠a
+,,Materiales Sanitarios : Llaves y v√°lvulas,Materiales Sanitarios,Llaves y v√°lvulas,,,,,,,,,,,34,Materiales Sanitarios,107,Llaves y v√°lvulas
 ,,Materiales Varios : Descartables,Materiales Varios,Descartables,,,,,,,,,,,76,Materiales Varios,247,Descartables
 ,,Materiales Varios : Materiales Uruguay,Materiales Varios,Materiales Uruguay,,,,,,,,,,,76,Materiales Varios,267,Materiales Uruguay
 ,,Materiales Varios : Materiales varios de obra,Materiales Varios,Materiales varios de obra,,,,,,,,,,,76,Materiales Varios,231,Materiales varios de obra
@@ -177,13 +177,13 @@ Otro..,Fibra Optica,Alambres : Recocido,Alambres,Recocido,mm,,,,,,,,,,3,Alambres
 ,,Membranas : Geotextil,Membranas,Geotextil,,,,,,,,,,,28,Membranas,87,Geotextil
 ,,Membranas : Otras,Membranas,Otras,,,,,,,,,,,28,Membranas,88,Otras
 ,,Mesadas : De piedra,Mesadas,De piedra,,,,,,,,,,,70,Mesadas,174,De piedra
-,,Mesadas : ReconstituÌdas,Mesadas,ReconstituÌdas,,,,,,,,,,,70,Mesadas,175,ReconstituÌdas
-,,Mezcla Asf·ltica : Varios,Mezcla Asf·ltica,Varios,,,,,,,,,,,29,Mezcla Asf·ltica,89,Varios
+,,Mesadas : Reconstitu√≠das,Mesadas,Reconstitu√≠das,,,,,,,,,,,70,Mesadas,175,Reconstitu√≠das
+,,Mezcla Asf√°ltica : Varios,Mezcla Asf√°ltica,Varios,,,,,,,,,,,29,Mezcla Asf√°ltica,89,Varios
 ,,Morteros : Elaborados,Morteros,Elaborados,,,,,,,,,,,30,Morteros,90,Elaborados
 ,,Morteros : Premezclados y proyectables,Morteros,Premezclados y proyectables,,,,,,,,,,,30,Morteros,91,Premezclados y proyectables
-,,Muros de ContenciÛn : Gaviones y colchonetas,Muros de ContenciÛn,Gaviones y colchonetas,,,,,,,,,,,59,Muros de ContenciÛn,150,Gaviones y colchonetas
-,,Muros de ContenciÛn : Sistema Alubry,Muros de ContenciÛn,Sistema Alubry,,,,,,,,,,,59,Muros de ContenciÛn,149,Sistema Alubry
-,,Muros de ContenciÛn : Sistema T∫A∫,Muros de ContenciÛn,Sistema T∫A∫,,,,,,,,,,,59,Muros de ContenciÛn,148,Sistema T∫A∫
+,,Muros de Contenci√≥n : Gaviones y colchonetas,Muros de Contenci√≥n,Gaviones y colchonetas,,,,,,,,,,,59,Muros de Contenci√≥n,150,Gaviones y colchonetas
+,,Muros de Contenci√≥n : Sistema Alubry,Muros de Contenci√≥n,Sistema Alubry,,,,,,,,,,,59,Muros de Contenci√≥n,149,Sistema Alubry
+,,Muros de Contenci√≥n : Sistema T¬∫A¬∫,Muros de Contenci√≥n,Sistema T¬∫A¬∫,,,,,,,,,,,59,Muros de Contenci√≥n,148,Sistema T¬∫A¬∫
 ,,Ornamentos : Varios,Ornamentos,Varios,,,,,,,,,,,67,Ornamentos,165,Varios
 ,,Pavimentos : Varios,Pavimentos,Varios,,,,,,,,,,,71,Pavimentos,176,Varios
 ,,Perfiles : De acero,Perfiles,De acero,,,,,,,,,,,31,Perfiles,92,De acero
@@ -199,32 +199,32 @@ Otro..,Fibra Optica,Alambres : Recocido,Alambres,Recocido,mm,,,,,,,,,,3,Alambres
 ,,Pinturas : Diluyentes,Pinturas,Diluyentes,,,,,,,,,,,53,Pinturas,137,Diluyentes
 ,,Pinturas : Enduidos,Pinturas,Enduidos,,,,,,,,,,,53,Pinturas,135,Enduidos
 ,,Pinturas : Lacas,Pinturas,Lacas,,,,,,,,,,,53,Pinturas,173,Lacas
-,,Pinturas : L·tex,Pinturas,L·tex,,,,,,,,,,,53,Pinturas,133,L·tex
-,,Pinturas : SintÈtica,Pinturas,SintÈtica,,,,,,,,,,,53,Pinturas,134,SintÈtica
-,,Pisos y ZÛcalos : Alfombras,Pisos y ZÛcalos,Alfombras,,,,,,,,,,,32,Pisos y ZÛcalos,138,Alfombras
-,,Pisos y ZÛcalos : Cer·micos,Pisos y ZÛcalos,Cer·micos,,,,,,,,,,,32,Pisos y ZÛcalos,96,Cer·micos
-,,Pisos y ZÛcalos : De HormigÛn y calc·reos,Pisos y ZÛcalos,De HormigÛn y calc·reos,,,,,,,,,,,32,Pisos y ZÛcalos,95,De HormigÛn y calc·reos
-,,Pisos y ZÛcalos : De Piedra,Pisos y ZÛcalos,De Piedra,,,,,,,,,,,32,Pisos y ZÛcalos,97,De Piedra
-,,Pisos y ZÛcalos : Madera,Pisos y ZÛcalos,Madera,,,,,,,,,,,32,Pisos y ZÛcalos,99,Madera
-,,Pisos y ZÛcalos : Otros,Pisos y ZÛcalos,Otros,,,,,,,,,,,32,Pisos y ZÛcalos,100,Otros
+,,Pinturas : L√°tex,Pinturas,L√°tex,,,,,,,,,,,53,Pinturas,133,L√°tex
+,,Pinturas : Sint√©tica,Pinturas,Sint√©tica,,,,,,,,,,,53,Pinturas,134,Sint√©tica
+,,Pisos y Z√≥calos : Alfombras,Pisos y Z√≥calos,Alfombras,,,,,,,,,,,32,Pisos y Z√≥calos,138,Alfombras
+,,Pisos y Z√≥calos : Cer√°micos,Pisos y Z√≥calos,Cer√°micos,,,,,,,,,,,32,Pisos y Z√≥calos,96,Cer√°micos
+,,Pisos y Z√≥calos : De Hormig√≥n y calc√°reos,Pisos y Z√≥calos,De Hormig√≥n y calc√°reos,,,,,,,,,,,32,Pisos y Z√≥calos,95,De Hormig√≥n y calc√°reos
+,,Pisos y Z√≥calos : De Piedra,Pisos y Z√≥calos,De Piedra,,,,,,,,,,,32,Pisos y Z√≥calos,97,De Piedra
+,,Pisos y Z√≥calos : Madera,Pisos y Z√≥calos,Madera,,,,,,,,,,,32,Pisos y Z√≥calos,99,Madera
+,,Pisos y Z√≥calos : Otros,Pisos y Z√≥calos,Otros,,,,,,,,,,,32,Pisos y Z√≥calos,100,Otros
 ,,Planchuela : Doble decapada,Planchuela,Doble decapada,,,,,,,,,,,77,Planchuela,235,Doble decapada
 ,,Planchuela : Galvanizada,Planchuela,Galvanizada,,,,,,,,,,,77,Planchuela,236,Galvanizada
 ,,Planchuela : Negra,Planchuela,Negra,,,,,,,,,,,77,Planchuela,237,Negra
-,,Premoldeados de H∫ : Columnas,Premoldeados de H∫,Columnas,,,,,,,,,,,21,Premoldeados de H∫,65,Columnas
-,,Premoldeados de H∫ : Otros,Premoldeados de H∫,Otros,,,,,,,,,,,21,Premoldeados de H∫,68,Otros
-,,Premoldeados de H∫ : Placas,Premoldeados de H∫,Placas,,,,,,,,,,,21,Premoldeados de H∫,67,Placas
-,,Premoldeados de H∫ : Vigas,Premoldeados de H∫,Vigas,,,,,,,,,,,21,Premoldeados de H∫,66,Vigas
-,,Radio y TelefonÌa : Accesorios Varios,Radio y TelefonÌa,Accesorios Varios,,,,,,,,,,,58,Radio y TelefonÌa,287,Accesorios Varios
-,,Radio y TelefonÌa : Equipos de telefonÌa y radio,Radio y TelefonÌa,Equipos de telefonÌa y radio,,,,,,,,,,,58,Radio y TelefonÌa,145,Equipos de telefonÌa y radio
+,,Premoldeados de H¬∫ : Columnas,Premoldeados de H¬∫,Columnas,,,,,,,,,,,21,Premoldeados de H¬∫,65,Columnas
+,,Premoldeados de H¬∫ : Otros,Premoldeados de H¬∫,Otros,,,,,,,,,,,21,Premoldeados de H¬∫,68,Otros
+,,Premoldeados de H¬∫ : Placas,Premoldeados de H¬∫,Placas,,,,,,,,,,,21,Premoldeados de H¬∫,67,Placas
+,,Premoldeados de H¬∫ : Vigas,Premoldeados de H¬∫,Vigas,,,,,,,,,,,21,Premoldeados de H¬∫,66,Vigas
+,,Radio y Telefon√≠a : Accesorios Varios,Radio y Telefon√≠a,Accesorios Varios,,,,,,,,,,,58,Radio y Telefon√≠a,287,Accesorios Varios
+,,Radio y Telefon√≠a : Equipos de telefon√≠a y radio,Radio y Telefon√≠a,Equipos de telefon√≠a y radio,,,,,,,,,,,58,Radio y Telefon√≠a,145,Equipos de telefon√≠a y radio
 ,,Repuestos : Accesorios,Repuestos,Accesorios,,,,,,,,,,,73,Repuestos,245,Accesorios
 ,,Repuestos : Desgastables,Repuestos,Desgastables,,,,,,,,,,,73,Repuestos,234,Desgastables
-,,Repuestos : Neum·ticos,Repuestos,Neum·ticos,,,,,,,,,,,73,Repuestos,191,Neum·ticos
+,,Repuestos : Neum√°ticos,Repuestos,Neum√°ticos,,,,,,,,,,,73,Repuestos,191,Neum√°ticos
 ,,Repuestos : Repuestos,Repuestos,Repuestos,,,,,,,,,,,73,Repuestos,188,Repuestos
-,,Revestimientos : Cer·micos,Revestimientos,Cer·micos,,,,,,,,,,,33,Revestimientos,101,Cer·micos
+,,Revestimientos : Cer√°micos,Revestimientos,Cer√°micos,,,,,,,,,,,33,Revestimientos,101,Cer√°micos
 ,,Revestimientos : De Piedra,Revestimientos,De Piedra,,,,,,,,,,,33,Revestimientos,102,De Piedra
 ,,Revestimientos : Madera,Revestimientos,Madera,,,,,,,,,,,33,Revestimientos,103,Madera
 ,,Revestimientos : Otros,Revestimientos,Otros,,,,,,,,,,,33,Revestimientos,104,Otros
-,,Revestimientos : Pl·sticos,Revestimientos,Pl·sticos,,,,,,,,,,,33,Revestimientos,171,Pl·sticos
+,,Revestimientos : Pl√°sticos,Revestimientos,Pl√°sticos,,,,,,,,,,,33,Revestimientos,171,Pl√°sticos
 ,,Ropa de Trabajo : Indumentaria,Ropa de Trabajo,Indumentaria,,,,,,,,,,,60,Ropa de Trabajo,262,Indumentaria
 ,,Seguridad Industrial : Equipamiento,Seguridad Industrial,Equipamiento,,,,,,,,,,,46,Seguridad Industrial,285,Equipamiento
 ,,Seguridad Industrial : Incendio consumibles,Seguridad Industrial,Incendio consumibles,,,,,,,,,,,46,Seguridad Industrial,298,Incendio consumibles
@@ -232,17 +232,18 @@ Otro..,Fibra Optica,Alambres : Recocido,Alambres,Recocido,mm,,,,,,,,,,3,Alambres
 ,,Seguridad Industrial : Ropa de trabajo,Seguridad Industrial,Ropa de trabajo,,,,,,,,,,,46,Seguridad Industrial,286,Ropa de trabajo
 ,,Seguridad Industrial : Varios,Seguridad Industrial,Varios,,,,,,,,,,,46,Seguridad Industrial,121,Varios
 ,,Servicios : Varios,Servicios,Varios,,,,,,,,,,,55,Servicios,244,Varios
-,,Suelos : mediciÛn por m3,Suelos,mediciÛn por m3,,,,,,,,,,,20,Suelos,63,mediciÛn por m3
-,,Suelos : MediciÛn por Tn,Suelos,MediciÛn por Tn,,,,,,,,,,,20,Suelos,64,MediciÛn por Tn
+,,Suelos : medici√≥n por m3,Suelos,medici√≥n por m3,,,,,,,,,,,20,Suelos,63,medici√≥n por m3
+,,Suelos : Medici√≥n por Tn,Suelos,Medici√≥n por Tn,,,,,,,,,,,20,Suelos,64,Medici√≥n por Tn
 ,,Terminaciones : Varios,Terminaciones,Varios,,,,,,,,,,,69,Terminaciones,168,Varios
-,,TopografÌa : Consumibles,TopografÌa,Consumibles,,,,,,,,,,,45,TopografÌa,280,Consumibles
-,,TopografÌa : Herramientas y equipamiento Mayor,TopografÌa,Herramientas y equipamiento Mayor,,,,,,,,,,,45,TopografÌa,305,Herramientas y equipamiento Mayor
-,,TopografÌa : Herramientas y equipamiento menor,TopografÌa,Herramientas y equipamiento menor,,,,,,,,,,,45,TopografÌa,279,Herramientas y equipamiento menor
-,,TopografÌa : Varios,TopografÌa,Varios,,,,,,,,,,,45,TopografÌa,180,Varios
+,,Topograf√≠a : Consumibles,Topograf√≠a,Consumibles,,,,,,,,,,,45,Topograf√≠a,280,Consumibles
+,,Topograf√≠a : Herramientas y equipamiento Mayor,Topograf√≠a,Herramientas y equipamiento Mayor,,,,,,,,,,,45,Topograf√≠a,305,Herramientas y equipamiento Mayor
+,,Topograf√≠a : Herramientas y equipamiento menor,Topograf√≠a,Herramientas y equipamiento menor,,,,,,,,,,,45,Topograf√≠a,279,Herramientas y equipamiento menor
+,,Topograf√≠a : Varios,Topograf√≠a,Varios,,,,,,,,,,,45,Topograf√≠a,180,Varios
 ,,Tubo : Acero,Tubo,Acero,,,,,,,,,,,78,Tubo,239,Acero
 ,,Varios Generales : Art. Limpieza,Varios Generales,Art. Limpieza,,,,,,,,,,,81,Varios Generales,248,Art. Limpieza
 ,,Varios Generales : Comestibles y bebidas,Varios Generales,Comestibles y bebidas,,,,,,,,,,,81,Varios Generales,246,Comestibles y bebidas
 ,,Varios Generales : Farmacia,Varios Generales,Farmacia,,,,,,,,,,,81,Varios Generales,249,Farmacia
 ,,Varios Generales : Medicamentos,Varios Generales,Medicamentos,,,,,,,,,,,81,Varios Generales,271,Medicamentos
 ,,Vidrios : Varios,Vidrios,Varios,,,,,,,,,,,36,Vidrios,114,Varios
-,,ZinguerÌa : Varios,ZinguerÌa,Varios,,,,,,,,,,,57,ZinguerÌa,143,Varios
+,,Zinguer√≠a : Varios,Zinguer√≠a,Varios,,,,,,,,,,,57,Zinguer√≠a,143,Varios
+
