@@ -177,9 +177,11 @@
             <select id="familia" name="familia"></select>
         </div>
 
+        <!-- CAMBIO: Super Categoría ahora es un input con datalist para búsqueda -->
         <div class="form-group">
             <label>Super Categoría / Categoría *</label>
-            <select id="superCategoria" name="superCategoria" required></select>
+            <input list="superCategoriaList" id="superCategoria" name="superCategoria" required autocomplete="off" placeholder="Escribe para buscar o selecciona...">
+            <datalist id="superCategoriaList"></datalist>
         </div>
 
         <div class="form-group">
@@ -187,9 +189,10 @@
             <select id="unidad" name="unidad" required></select>
         </div>
 
+        <!-- CAMBIO: Material ya no es obligatorio ni lleva asterisco -->
         <div class="form-group">
-            <label>Material *</label>
-            <input type="text" id="material" name="material" required>
+            <label>Material</label>
+            <input type="text" id="material" name="material">
         </div>
 
         <div class="form-group">
@@ -200,9 +203,10 @@
             </div>
         </div>
 
+        <!-- CAMBIO: Marca / Fabricante ya no es obligatorio ni lleva asterisco -->
         <div class="form-group">
-            <label>Marca / Fabricante *</label>
-            <input type="text" id="marca" name="marca" required>
+            <label>Marca / Fabricante</label>
+            <input type="text" id="marca" name="marca">
         </div>
         <div class="form-group">
             <label>Código Fabricante</label>
@@ -275,6 +279,9 @@
 </div>
 
 <script>
+    // Variable global para almacenar las opciones válidas de Super Categoría
+    let opcionesSuperCat = new Set();
+
     // Función para obtener la fecha y hora actual formateada
     function obtenerFechaHoraActual() {
         const opciones = { 
@@ -316,7 +323,7 @@
         selectElement.selectedIndex = 0; 
     }
 
-    // Carga de CSV y población de listas (Actualizado para leer acentos)
+    // Carga de CSV y población de listas
     async function init() {
         try {
             const response = await fetch('auxiliar.csv');
@@ -325,7 +332,7 @@
             // Leemos el archivo como ArrayBuffer para poder decodificarlo manualmente
             const buffer = await response.arrayBuffer();
             
-            // Forzamos la decodificación en ISO-8859-1 (el formato estándar de Excel en español)
+            // Forzamos la decodificación en ISO-8859-1
             const decoder = new TextDecoder('iso-8859-1');
             const text = decoder.decode(buffer);
             
@@ -342,7 +349,7 @@
             procesarCSV(event.target.result);
             document.getElementById('local-notice').style.display = 'none';
         };
-        // Agregamos el parámetro 'ISO-8859-1' para que mantenga las eñes y tildes
+        // Agregamos el parámetro 'ISO-8859-1' para mantener las eñes y tildes
         reader.readAsText(e.target.files[0], 'ISO-8859-1');
     });
 
@@ -368,15 +375,26 @@
             if (c[12]) sets.correos.add(c[12].trim());
         });
 
+        // Función original para listas desplegables (select)
         const llenar = (id, set) => {
             const el = document.getElementById(id);
             el.innerHTML = '<option value="">-- Seleccionar --</option>';
             [...set].sort().forEach(v => el.add(new Option(v, v)));
         };
 
+        // Función nueva para llenar el datalist (búsqueda autocompletable)
+        const llenarDatalist = (id, set) => {
+            const el = document.getElementById(id);
+            el.innerHTML = ''; // Limpiar opciones anteriores
+            [...set].sort().forEach(v => {
+                const opt = document.createElement('option');
+                opt.value = v;
+                el.appendChild(opt);
+            });
+        };
+
         llenar('correo', sets.correos);
         llenar('familia', sets.familia);
-        llenar('superCategoria', sets.superCat);
         llenar('unidad', sets.unidad);
         llenar('norma', sets.norma);
         llenar('unidadDimensiones', sets.unidDim);
@@ -384,6 +402,10 @@
         llenar('unidadPesoBruto', sets.unidPeso);
         llenar('fragilidadSelect', sets.fragilidad);
         llenar('peligrosidadSelect', sets.peligrosidad);
+
+        // Poblamos el Datalist de Super Categoría y guardamos el set para validación posterior
+        llenarDatalist('superCategoriaList', sets.superCat);
+        opcionesSuperCat = sets.superCat;
     }
 
     // FUNCIÓN PARA ENVIAR A GOOGLE APPS SCRIPT
@@ -393,6 +415,16 @@
         // Validar campos requeridos nativos de HTML
         if (!form.checkValidity()) {
             form.reportValidity(); 
+            return;
+        }
+
+        // ==========================================
+        // VALIDACIÓN DE AUTOCOMPLETADO (SUPER CATEGORÍA)
+        // ==========================================
+        const superCatValue = document.getElementById('superCategoria').value.trim();
+        if (!opcionesSuperCat.has(superCatValue)) {
+            alert("En el campo 'Super Categoría / Categoría' debes seleccionar una de las opciones sugeridas en la lista.");
+            document.getElementById('superCategoria').focus();
             return;
         }
 
