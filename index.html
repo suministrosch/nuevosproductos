@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>REQUERIMIENTO DE NUEVO PRODUCTO</title>
+    
+    <!-- CAMBIO: Icono para la solapa del navegador (imagen_3) -->
+    <link rel="icon" href="imagen_3.png" type="image/png">
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -25,6 +29,15 @@
             border-bottom: 2px solid #b3d4fc;
             padding-bottom: 10px;
             margin-top: 0;
+            /* CAMBIO: Flexbox para alinear la imagen y el texto del título */
+            display: flex;
+            align-items: center;
+            gap: 15px; 
+        }
+        /* CAMBIO: Estilos para el logo del título */
+        .logo-img {
+            max-height: 50px; /* Puedes ajustar este valor según el tamaño de tu imagen */
+            width: auto;
         }
         .form-group {
             display: flex;
@@ -155,7 +168,11 @@
         <input type="file" id="localCsvInput" accept=".csv" style="margin-top:10px;">
     </div>
 
-    <h2>REQUERIMIENTO DE NUEVO PRODUCTO</h2>
+    <h2>
+        <!-- CAMBIO: Imagen delante del título (imagen_1) -->
+        <img src="imagen_1.png" alt="Logo Chediack" class="logo-img">
+        REQUERIMIENTO DE NUEVO PRODUCTO
+    </h2>
     
     <form id="productForm">
         <div class="form-group">
@@ -177,7 +194,7 @@
             <select id="familia" name="familia"></select>
         </div>
 
-        <!-- CAMBIO: Super Categoría ahora es un input con datalist para búsqueda -->
+        <!-- Super Categoría ahora es un input con datalist para búsqueda -->
         <div class="form-group">
             <label>Super Categoría / Categoría *</label>
             <input list="superCategoriaList" id="superCategoria" name="superCategoria" required autocomplete="off" placeholder="Escribe para buscar o selecciona...">
@@ -189,7 +206,7 @@
             <select id="unidad" name="unidad" required></select>
         </div>
 
-        <!-- CAMBIO: Material ya no es obligatorio ni lleva asterisco -->
+        <!-- Material ya no es obligatorio ni lleva asterisco -->
         <div class="form-group">
             <label>Material</label>
             <input type="text" id="material" name="material">
@@ -203,7 +220,7 @@
             </div>
         </div>
 
-        <!-- CAMBIO: Marca / Fabricante ya no es obligatorio ni lleva asterisco -->
+        <!-- Marca / Fabricante ya no es obligatorio ni lleva asterisco -->
         <div class="form-group">
             <label>Marca / Fabricante</label>
             <input type="text" id="marca" name="marca">
