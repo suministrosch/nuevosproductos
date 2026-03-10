@@ -169,16 +169,28 @@
     </div>
 
     <h2>
-        <!-- CAMBIO: Imagen delante del título (imagen_1) -->
+        <!-- Imagen delante del título (imagen_1) -->
         <img src="imagen_1.png" alt="Logo Chediack" class="logo-img">
         REQUERIMIENTO DE NUEVO PRODUCTO
     </h2>
     
     <form id="productForm">
+        
+        <!-- CAMBIO: Usuario modificado para escribir solo la primera parte -->
         <div class="form-group">
             <label>Usuario / Correo *</label>
-            <select id="correo" name="correo" required></select>
+            <div style="display: flex; flex: 1; align-items: center;">
+                <input type="text" id="correoInput" name="correoInput" required placeholder="ejemplo: juan.perez" style="flex: 1;">
+                <span style="font-weight: bold; margin-left: 8px; color: #555;">@chediack.com.ar</span>
+            </div>
         </div>
+
+        <!-- CAMBIO: Nuevo campo alfanumérico -->
+        <div class="form-group">
+            <label>Caso</label>
+            <input type="text" id="codigoAlfa" name="codigoAlfa" placeholder="Ej: #15992">
+        </div>
+
         <div class="form-group">
             <label>Fecha y hora *</label>
             <input type="text" id="fecha" name="fecha" readonly class="readonly-input">
@@ -375,7 +387,7 @@
         const sets = {
             familia: new Set(), superCat: new Set(), unidad: new Set(),
             norma: new Set(), unidDim: new Set(), unidPeso: new Set(),
-            fragilidad: new Set(), peligrosidad: new Set(), correos: new Set()
+            fragilidad: new Set(), peligrosidad: new Set()
         };
 
         filas.forEach((fila, i) => {
@@ -389,28 +401,30 @@
             if (c[8]) sets.unidPeso.add(c[8].trim());
             if (c[9]) sets.fragilidad.add(c[9].trim());
             if (c[10]) sets.peligrosidad.add(c[10].trim());
-            if (c[12]) sets.correos.add(c[12].trim());
         });
 
         // Función original para listas desplegables (select)
         const llenar = (id, set) => {
             const el = document.getElementById(id);
-            el.innerHTML = '<option value="">-- Seleccionar --</option>';
-            [...set].sort().forEach(v => el.add(new Option(v, v)));
+            if (el) {
+                el.innerHTML = '<option value="">-- Seleccionar --</option>';
+                [...set].sort().forEach(v => el.add(new Option(v, v)));
+            }
         };
 
         // Función nueva para llenar el datalist (búsqueda autocompletable)
         const llenarDatalist = (id, set) => {
             const el = document.getElementById(id);
-            el.innerHTML = ''; // Limpiar opciones anteriores
-            [...set].sort().forEach(v => {
-                const opt = document.createElement('option');
-                opt.value = v;
-                el.appendChild(opt);
-            });
+            if (el) {
+                el.innerHTML = ''; // Limpiar opciones anteriores
+                [...set].sort().forEach(v => {
+                    const opt = document.createElement('option');
+                    opt.value = v;
+                    el.appendChild(opt);
+                });
+            }
         };
 
-        llenar('correo', sets.correos);
         llenar('familia', sets.familia);
         llenar('unidad', sets.unidad);
         llenar('norma', sets.norma);
@@ -471,16 +485,28 @@
             return;
         }
         
-        // Capturar correo del usuario
-        const correoCarga = document.getElementById('correo').value;
-        if (!correoCarga) {
-            alert("Debe seleccionar un Usuario / Correo.");
+        // ==========================================
+        // CONSTRUCCIÓN DEL CORREO
+        // ==========================================
+        let usuarioParcial = document.getElementById('correoInput').value.trim();
+        
+        // Por si el usuario por costumbre escribe el @ en el input, lo limpiamos para no duplicarlo
+        if(usuarioParcial.includes('@')) {
+            usuarioParcial = usuarioParcial.split('@')[0];
+        }
+
+        if (!usuarioParcial) {
+            alert("Debe ingresar la primera parte de su Usuario / Correo.");
+            document.getElementById('correoInput').focus();
             return;
         }
+
+        const correoCarga = usuarioParcial + "@chediack.com.ar";
 
         // Construcción del cuerpo (Body) del correo y listado de valores
         const campos = [
             ["Usuario", correoCarga],
+            ["Caso", document.getElementById('codigoAlfa').value], // CAMBIO: Nuevo campo insertado aquí
             ["Fecha", document.getElementById('fecha').value],
             ["Descripción", document.getElementById('descripcion').value],
             ["Familia", document.getElementById('familia').value],
@@ -497,7 +523,7 @@
             ["Peligrosidad", document.getElementById('peligrosidad').value],
             ["Cod. Barras", document.getElementById('codigoBarras').value],
             ["Trazabilidad", document.getElementById('trazabilidad').checked ? "SÍ" : "NO"],
-            ["Reposición", document.getElementById('reposicion').value + " meses"],
+            ["Reposición", document.getElementById('reposicion').value ? document.getElementById('reposicion').value + " meses" : ""],
             ["Notas", document.getElementById('notas').value]
         ];
 
